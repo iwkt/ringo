@@ -1,0 +1,267 @@
+/* --- mixin 定義 ---------------------------------------- */
+@mixin bgi( $size: cover, $position: center center) {
+  background: {
+    size: $size;
+    position: $position;
+    repeat: no-repeat;
+  }
+}
+
+body {
+  font-family: Loto;
+}
+
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  font-feature-settings: 'palt';
+}
+
+
+
+.about_ {
+  &inner {
+    padding: 0 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2;
+  }
+  &wrapper {
+    background-color: #d3032b;
+    & p {
+      color: white !important;
+    }
+  }
+}
+
+// ↓は便利。質問する
+.about p:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.allow {
+  height:  50px;
+}
+
+.bottom_logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+
+}
+
+.feature_ {
+  &wrapper {
+    padding-bottom: 60px;
+    }
+  &pict {
+    padding-bottom: 30px;
+    & img{
+      widows: 100%;
+    }
+  }
+}
+
+.header_logo {
+  position: absolute;
+  top: 36px;
+  left: 18px;
+  width: 124px;
+  z-index: 100;
+}
+
+// .header_logo {
+//   padding-top: 36px !important;
+//   padding-left: 18px;
+//   &_grid {
+//     width: 124px;
+//     height: 27px;
+//   } 
+// }
+
+//ハンバーガーmenu============= 
+.nav_area { //外枠の丸
+  position: fixed;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  right: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  z-index: 10;
+}
+.nav_open {
+  & div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.3s;
+
+    &:nth-of-type(1) {
+      transform: translate(-50%,-10px);
+    }
+    &:nth-of-type(3) {
+      transform: translate(-50%,10px);
+    }
+  }
+}
+.nav_open.active div {
+  &:nth-last-child(1) {
+    transform: rotate(45deg) translate(-50%,0px);
+    transform-origin: left;
+  }
+  &:nth-last-child(2) {
+    opacity: 0;
+  }
+  &:nth-last-child(3) {
+    transform: rotate(-45deg) translate(-50%,0px);
+    transform-origin: left;
+  }
+  
+}
+
+.news_ {
+  &cell {
+    color: #545454;
+    font-family: Lato;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    font-feature-settings: 'palt';
+    margin-bottom: 2rem !important;
+  }
+
+  &wrapper {
+    width: 86%;
+  }
+    
+  &date {
+    margin-top: 10px;
+  }
+
+  &nav {
+    & span {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: red;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.5rem;
+      text-align: right;
+    }
+  }
+}
+
+//ハンバーガーmenu============= 
+
+.mv {
+  position: relative;
+}
+
+// .mv_grid {
+//   height: 420px;
+//   	background-image: url(../../assets/images/background_mainvisual.jpg);
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+// }
+.mv_pict01 {
+  height: 420px;
+  object-fit: cover;
+}
+
+.play_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-47%,-136%);
+  width: 20px; 
+}
+
+// 回転アニメーションここから=====================
+.roll_circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  animation: rollkAnime 3.5s linear infinite;
+  animation-fill-mode:backwords;
+}
+
+@keyframes rollkAnime{
+  0% {
+    transform: translate(-50%,-76%) rotate(0deg);
+    }
+    
+  100% {
+         transform: translate(-50%,-76%) rotate(360deg);
+       }
+}
+// 回転アニメーションここまで=====================
+
+.section_title {
+  color: red;
+  font-family: Lato;
+  letter-spacing: 3px;
+  padding-left: 16px;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.slide_dot {
+  margin-bottom: 1rem;
+  & div {
+    background-color: #cecece;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    height: 8px;
+    width: 8px;
+  }
+}
+
+.watch_movie {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,400%);
+  color: white;
+  font-size: 0.8rem;
+
+}
+
+// ssroll お試し　==============
+.scroll {
+  margin     : auto;
+  width      : 96%;
+  font-size  : 140%;
+  line-height: 1.5em;
+  text-align : center;
+  border     : 1px solid #666;
+  color      : #000000;
+  background : #fff;
+  overflow   : hidden;
+}
+.scroll span{
+  display     : inline-block;
+  padding-left: 100%;
+  white-space : nowrap;
+  line-height : 1em;
+  animation   : scrollAnime 10s linear infinite;
+}
+@keyframes scrollAnime{
+    0% { transform: translateX(-100%)}
+  100% { transform: translateX(0%)}
+}
