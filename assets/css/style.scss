@@ -7,6 +7,8 @@
   }
 }
 
+@import 'mixin';
+
 body {
   font-family: Loto;
 }
@@ -242,26 +244,61 @@ p{
 
 }
 
-// ssroll お試し　==============
-.scroll {
-  margin     : auto;
-  width      : 96%;
-  font-size  : 140%;
-  line-height: 1.5em;
-  text-align : center;
-  border     : 1px solid #666;
-  color      : #000000;
-  background : #fff;
-  overflow   : hidden;
+// ================================
+.about_inner {
+  position: relative;
 }
-.scroll span{
-  display     : inline-block;
-  padding-left: 100%;
-  white-space : nowrap;
-  line-height : 1em;
-  animation   : scrollAnime 10s linear infinite;
+
+.section_title.about {
+  padding-bottom: 60px;
 }
-@keyframes scrollAnime{
-    0% { transform: translateX(-100%)}
-  100% { transform: translateX(0%)}
+
+.animate-title {
+  position: absolute;
+  top: -13%;
+  left: 18px;
+  color: white;
+  opacity: 0;
+  font-size: 1.2rem;
+
+  & span {
+    margin-right: 0;
+  }
+
+  &.inview {
+    opacity: 1;
+
+    & .char {
+      display: inline-block;
+
+      @include animation(
+        $name: kf-animate-chars,
+        $duration: 0.5s,
+        $delay: 0.5s,
+        $timing-function: cubic-bezier(0.39, 1.57, 0.58, 1),
+        $fill-mode: both
+      );
+
+      @for $i from 1 through 14 {
+          &:nth-child(#{$i}) {
+              animation-delay: $i * 0.04s;
+          }
+      }
+    }
+  }
 }
+
+@keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+//======================================
