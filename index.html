@@ -81,10 +81,12 @@
       <section id="AboutRingo" class="about">
         <div class="about_wrapper">
           <div class="about_title sm-12">
-            <p class="section_title">ABOUT RINGO</p>
+            <p class="section_title about">ABOUT RINGO</p>
           </div>
           <div class="about_inner">
-            <h3>とっておきを、みんなのものへ</h3>
+            <div class="animate-title">
+              とっておきを、みんなのものへ
+            </div>
             <p>は「焼きたてカスタードアップルパイ」の専門店。</p>
             <p>工房一体型をコンセプトとして、店舗で焼き上げ、いつでも出来たてのアップルパイをご提供しています。</p>
             <p>お菓子職人が、とびっきりおいしいアップルパイを作るために日夜、工房にこもって作り続けた結果できたご褒美スイーツ。そんなご褒美スイーツを皆様におすそわけする場がRINGOです。</p>
@@ -94,14 +96,11 @@
 
       </section>
       
-      使用したhtml
-      
-      <div class="scroll">
-        <span>● ● ● ● ● </span>
-      </div>
+      <button onclick="document.querySelector('.animate-title').classList.toggle('inview');">Animation</button>
 
       
     </main>
+    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/humbger.js"></script>
   </body>
 </html>
