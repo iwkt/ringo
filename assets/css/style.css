@@ -66,7 +66,7 @@ p {
   z-index: 100;
 }
 
-.nav_area {
+.nav_area a {
   position: fixed;
   display: inline-block;
   width: 50px;
