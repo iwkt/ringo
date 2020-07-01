@@ -13,10 +13,11 @@ body {
   font-family: Loto;
 }
 
-[class*=col-], [class*=col_], [class~=col] {
+[class*=grid-], [class*=grid_], [class~=grid] ,[class*=col-], [class*=col_], [class~=col] {
   padding: 0;
   margin: 0;
 }
+
 
 p{
   font-feature-settings: 'palt';
