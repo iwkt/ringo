@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* --- mixin 定義 ---------------------------------------- */
 body {
-  font-family: Loto;
+  font-family: Lato,Hiragino Kaku Gothic ProN,'ヒラギノ角ゴ ProN W3',Meiryo,"メイリオ",Hiragino Kaku Gothic ProN,'ヒラギノ角ゴ ProN W3',sans-serif;
 }
 
 [class*=grid-], [class*=grid_], [class~=grid], [class*=col-], [class*=col_], [class~=col] {
@@ -27,7 +27,6 @@ p {
 
 .about_wrapper p {
   color: white !important;
-  font-family: Loto;
 }
 
 .about p:not(:last-child) {
