@@ -27,6 +27,7 @@ p {
 
 .about_wrapper p {
   color: white !important;
+  font-family: Loto !important;
 }
 
 .about p:not(:last-child) {
