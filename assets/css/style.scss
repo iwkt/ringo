@@ -27,6 +27,8 @@ p{
   font-feature-settings: 'palt';
 }
 
+$feature_padding: 20px;
+
 
 
 .about_ {
@@ -112,7 +114,8 @@ p{
 
 .feature_ {
   &wrapper {
-    padding-bottom: 60px;
+    position: relative;
+    padding-bottom: 30px;
     }
   &pict {
     padding-bottom: 30px;
@@ -205,16 +208,20 @@ p{
   &cell {
     color: #545454;
     font-family: Lato;
-    font-size: 0.9rem;
-    font-weight: 300;
+    // font-size: 0.9rem;
+    // font-weight: 300;
     letter-spacing: 0.1rem;
     font-feature-settings: 'palt';
-    margin-bottom: 2rem !important;
+    // margin-bottom: 1rem !important;
+    // padding-left: $feature_padding !important;
   }
 
-  &wrapper {
-    width: 86%;
-  }
+  // &wrapper {
+  //   width: 86%;
+  //   position: absolute;
+  //   top: 370px;
+  //   left: $feature_padding;
+  // }
     
   &date {
     margin-top: 10px;
@@ -303,6 +310,23 @@ p{
     margin-right: 10px;
     height: 8px;
     width: 8px;
+  }
+}
+
+.swiper-slide img {
+  max-width: 375px;
+}
+
+.swiper- {
+  &buttons {
+    padding: $feature_padding !important;
+  }
+  &pagination {
+    // margin-bottom: 1rem !important;
+    padding: 10px $feature_padding;
+  }
+  &slide_text {
+    padding: $feature_padding !important;
   }
 }
 

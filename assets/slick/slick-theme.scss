@@ -132,13 +132,13 @@ $slick-opacity-not-active: 1 !default;/* defult 0.25 */
 
 .slick-dotted.slick-slider {
     // slider下のmargin.初期値は30px
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 }
 
 .slick-dots {
     position: absolute;
     // ドットの位置.初期値は-25px
-    bottom: 0px;
+    bottom: -25px;
     list-style: none;
     display: block;
     text-align: center;

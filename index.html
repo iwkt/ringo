@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>ringo</title>
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">		
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="./assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <link rel="stylesheet" href="./assets/css/reset_style.css">
-    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">		<link href="./assets/slick/slick-theme.css" rel="stylesheet" type="text/css">
-    <link href="./assets/slick/slick.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <script src="./assets/jQuery/jquery.min.js"></script>
-    <script src="./assets/slick/slick.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -56,11 +55,46 @@
           <div class="feature_title sm-12">
             <p class="section_title">FEATURE</p>
           </div>
-          <div class="grid-center">
-            <div class="feature_pict slide_pict sm-12">
+          <!-- <div class="grid-center"> -->
+            <!-- <div class="feature_pict slide_pict sm-12">
               <img src="./assets/images/RINGO_new_02-840x473.jpg" alt="cream_paffe">
-            </div>
-            <div class="news_wrapper">
+            </div> -->
+            
+            <!-- Slider main container -->
+            <!-- <div id="swiper" class="grid"> -->
+              <div class="swiper-container col-12">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="./assets/images/peach_pie.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/RINGO_new_02-840x473.jpg" alt="">
+                    <div class="swiper-slide_text">
+                      <h3 class="news_cell">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
+                      <p class="news_cell news_date">2020.06.08</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/ogp_logo.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination col-12"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-buttons col-12 grid">
+                <div class="swiper-button-prev col-2"></div>
+                <div class="swiper-button-next col-2"></div>
+              </div>
+              <!-- swiperここまで -->
+            <!-- </div> -->
+            <!--grid-->
+              
+            <!-- <div class="news_wrapper">
               <div class="news_cell col-12">
                 <h3 class="news_ttl">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
                 <p class="news_date">2020.06.08</p>
@@ -74,8 +108,8 @@
                 <img class="allow_circle col-bottom_sm-2" data-push-left="off-2" src="./assets/images/circle_allow.svg" alt="circle_allow">
                 <span class="col-bottom_sm-4">NEWS LIST</span>
               </div>
-            </div>
-          </div>
+            </div> -->
+          
         </div>
       </section>
       <section id="AboutRingo" class="about">
@@ -115,5 +149,7 @@
     <script src="./assets/js/text_split.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/img-zoom.js"></script>
+    <script src="./assets/swiper/swiper.min.js"></script>
+    <script src="./assets/js/swiper_local.js"></script>
   </body>
 </html>
