@@ -314,7 +314,9 @@ $feature_padding: 20px;
 }
 
 .swiper-slide img {
-  max-width: 375px;
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .swiper- {

@@ -249,7 +249,10 @@ p {
 }
 
 .swiper-slide img {
-  max-width: 375px;
+  height: 210px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-buttons {
