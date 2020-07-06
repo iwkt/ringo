@@ -22,6 +22,7 @@ let mySwiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
   },
 
+
   //スクロールバー表示の設定
   scrollbar: {
     el: '.swiper-scrollbar', //要素の指定

@@ -205,38 +205,35 @@ $feature_padding: 20px;
 }
 
 .news_ {
-  &cell {
-    color: #545454;
+  &article {
+    color: #131313;
     font-family: Lato;
-    // font-size: 0.9rem;
-    // font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     letter-spacing: 0.1rem;
+    line-height: 1.4rem;
     font-feature-settings: 'palt';
     // margin-bottom: 1rem !important;
     // padding-left: $feature_padding !important;
   }
 
-  // &wrapper {
-  //   width: 86%;
-  //   position: absolute;
-  //   top: 370px;
-  //   left: $feature_padding;
-  // }
-    
   &date {
+    color: #999;
+    font-size: 12px;
     margin-top: 10px;
+    letter-spacing: 0.1rem;
   }
 
-  &nav {
-    & span {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: red;
-      letter-spacing: 0.1rem;
-      padding-bottom: 0.5rem;
-      text-align: right;
-    }
-  }
+  // &nav {
+  //   & span {
+  //     font-size: 0.7rem;
+  //     font-weight: 700;
+  //     color: red;
+  //     letter-spacing: 0.1rem;
+  //     padding-bottom: 0.5rem;
+  //     text-align: right;
+  //   }
+  // }
 }
 
 //ハンバーガーmenu============= 
@@ -313,10 +310,16 @@ $feature_padding: 20px;
   }
 }
 
-.swiper-slide img {
-  height: 210px;
-  width: 100%;
-  object-fit: cover;
+.swiper-slide  {
+  height: 310px;
+  & img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+  &_text {
+    height: 100px;
+  }
 }
 
 .swiper- {
@@ -328,7 +331,11 @@ $feature_padding: 20px;
     padding: 10px $feature_padding;
   }
   &slide_text {
+    height: 100px;
     padding: $feature_padding !important;
+  }
+  &pagination-bullet {
+    margin-right: 10px;
   }
 }
 
