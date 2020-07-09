@@ -191,7 +191,7 @@ p {
   width: 20px;
 }
 
-.roll_circle {
+.mv .roll_circle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -200,6 +200,21 @@ p {
   color: #fff;
   width: 80px !important;
   height: 80px !important;
+  -webkit-animation: rollkAnime 3.5s linear infinite;
+          animation: rollkAnime 3.5s linear infinite;
+  -webkit-animation-fill-mode: backwords;
+          animation-fill-mode: backwords;
+}
+
+.product_kv .roll_circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  width: 70px !important;
+  height: 70px !important;
   -webkit-animation: rollkAnime 3.5s linear infinite;
           animation: rollkAnime 3.5s linear infinite;
   -webkit-animation-fill-mode: backwords;
@@ -228,7 +243,25 @@ p {
   }
 }
 
-.product {
+.roll_circle_positon {
+  position: relative;
+}
+
+.pie_icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -125%);
+          transform: translate(-50%, -125%);
+}
+
+.pie_btn {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.product_kv {
   background-image: url(../images/background_top-product.jpg);
   background-size: cover;
   background-position: center center;

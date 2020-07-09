@@ -193,15 +193,28 @@ $feature_padding: 20px;
 
 // 回転アニメーションここから=====================
 .roll_circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: #fff;
-  width: 80px !important;
-  height: 80px !important;
-  animation: rollkAnime 3.5s linear infinite;
-  animation-fill-mode:backwords;
+  .mv & {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 80px !important;
+    height: 80px !important;
+    animation: rollkAnime 3.5s linear infinite;
+    animation-fill-mode:backwords;
+  }
+  .product_kv & {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 70px !important;
+    height: 70px !important;
+    animation: rollkAnime 3.5s linear infinite;
+    animation-fill-mode:backwords;
+  }
 }
 
 @keyframes rollkAnime{
@@ -215,12 +228,32 @@ $feature_padding: 20px;
 }
 // 回転アニメーションここまで=====================
 
-.product {
-  background-image: url(../images/background_top-product.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 450px;
+.roll_circle_positon {
+  position: relative;
+}
+
+.pie_ {
+  &icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -125%);
+  }
+  &btn {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+.product_ {
+  &kv {
+    background-image: url(../images/background_top-product.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 450px;
+  }
 }
 
 .section_title {
