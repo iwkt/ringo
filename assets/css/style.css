@@ -15,14 +15,18 @@ p {
 }
 
 .about_inner {
-  padding: 0 20px;
+  padding: 0 20px 50px;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   line-height: 2.2;
 }
 
 .about_wrapper {
-  background-color: #d3032b;
+  background-image: url(../images/background_red.png);
+  background-color: rgba(211, 3, 4, 0.9);
+  background-blend-mode: lighten;
+  background-size: cover;
+  margin-bottom: 50px;
 }
 
 .about_wrapper p {
@@ -31,10 +35,6 @@ p {
 
 .about p:not(:last-child) {
   margin-bottom: 1em;
-}
-
-.allow {
-  height: 50px;
 }
 
 .bottom_logo {
@@ -46,17 +46,24 @@ p {
   width: 80%;
 }
 
-.feature_wrapper {
-  position: relative;
-  padding-bottom: 30px;
+.circle_allow {
+  display: inline-block;
+  text-align: right;
 }
 
-.feature_pict {
-  padding-bottom: 30px;
+.circle_allow a {
+  color: #d3032b;
+  font-size: 12px;
+  padding-left: 12px;
+  font-family: Loto;
+  font-weight: 700;
+  vertical-align: middle;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
 }
 
-.feature_pict img {
-  widows: 100%;
+.feature {
+  margin-bottom: 2.6rem;
 }
 
 .header_logo {
@@ -161,9 +168,11 @@ p {
   font-size: 12px;
   margin-top: 10px;
   letter-spacing: 0.1rem;
+  margin-top: 20px;
 }
 
-.mv {
+.mv,
+.product {
   position: relative;
 }
 
@@ -189,8 +198,8 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fff;
-  width: 80px;
-  height: 80px;
+  width: 80px !important;
+  height: 80px !important;
   -webkit-animation: rollkAnime 3.5s linear infinite;
           animation: rollkAnime 3.5s linear infinite;
   -webkit-animation-fill-mode: backwords;
@@ -219,6 +228,14 @@ p {
   }
 }
 
+.product {
+  background-image: url(../images/background_top-product.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
 .section_title {
   color: red;
   font-family: Lato;
@@ -230,6 +247,10 @@ p {
 
 .section_title.shop {
   color: #959595;
+}
+
+.section_title.product {
+  color: #fff;
 }
 
 .slide_dot {
@@ -256,25 +277,51 @@ p {
      object-fit: cover;
 }
 
-.swiper-slide_text {
-  height: 100px;
-}
-
 .swiper-buttons {
   padding: 20px !important;
 }
 
 .swiper-pagination {
-  padding: 10px 20px;
+  position: static;
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 20px;
 }
 
-.swiper-slide_text {
-  height: 100px;
+.swiper-pagination-bullet-active {
+  background: #d3032b;
+}
+
+.swiper-text {
+  width: 100vw;
   padding: 20px !important;
+  margin-bottom: 30px;
 }
 
-.swiper-pagination-bullet {
-  margin-right: 10px;
+.swiper-button-prev {
+  background-image: url(../images/allow_r.svg);
+  background-size: contain;
+}
+
+.swiper-button-next {
+  background-image: url(../images/allow_l.svg);
+  background-size: contain;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin: 0;
+  display: inline-block;
+  position: static;
+  width: 50px;
+  height: 50px;
+  top: calc((100% - 50px) * 0.5);
+  /* ☆★ページネーション・スクロールバー（50px）を除く縦位置の中央（＝スライドの高さの中央）に一旦配置 */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }
 
 .watch_movie {
@@ -285,6 +332,11 @@ p {
           transform: translate(-50%, 400%);
   color: white;
   font-size: 0.8rem;
+}
+
+.white_ringo {
+  width: 22%;
+  vertical-align: -2px;
 }
 
 .about_inner {
