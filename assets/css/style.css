@@ -99,6 +99,25 @@ p {
           animation-fill-mode: forwards;
 }
 
+.line_dot {
+  position: absolute;
+  top: 40%;
+  left: 49%;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.line_dot.inview {
+  -webkit-animation: pieAnime 1s;
+          animation: pieAnime 1s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  opacity: 1;
+}
+
 .nav_area a {
   position: fixed;
   display: inline-block;
@@ -208,15 +227,13 @@ p {
 
 .product_kv .roll_circle {
   position: absolute;
-  top: 50%;
+  top: 28%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   color: #fff;
-  width: 70px !important;
-  height: 70px !important;
-  -webkit-animation: rollkAnime 3.5s linear infinite;
-          animation: rollkAnime 3.5s linear infinite;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: rollzAnime 1s , rollkAnime 3.5s linear infinite;
+          animation: rollzAnime 1s , rollkAnime 3.5s linear infinite;
   -webkit-animation-fill-mode: backwords;
           animation-fill-mode: backwords;
 }
@@ -243,22 +260,82 @@ p {
   }
 }
 
-.roll_circle_positon {
-  position: relative;
+@-webkit-keyframes rollzAnime {
+  0% {
+    width: 120px;
+    opacity: 0;
+  }
+  100% {
+    width: 70px;
+    opacity: 1;
+  }
+}
+
+@keyframes rollzAnime {
+  0% {
+    width: 120px;
+    opacity: 0;
+  }
+  100% {
+    width: 70px;
+    opacity: 1;
+  }
 }
 
 .pie_icon {
   display: inline-block;
   position: absolute;
-  top: 50%;
+  top: 28%;
   left: 50%;
   -webkit-transform: translate(-50%, -125%);
           transform: translate(-50%, -125%);
 }
 
+.pie_icon::after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  border-right: 2px dotted white;
+  right: 10px;
+  top: 20px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.pie_icon.inview::after {
+  -webkit-animation: pieAnime 0.6s ease 0.3s;
+          animation: pieAnime 0.6s ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .pie_btn {
   width: 24px !important;
   height: 24px !important;
+}
+
+@-webkit-keyframes pieAnime {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes pieAnime {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .product_kv {
