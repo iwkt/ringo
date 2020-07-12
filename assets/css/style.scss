@@ -492,3 +492,30 @@ position: absolute;
     opacity: 1;
   }
 }
+
+//　-------------------------------------
+
+.s-left-text {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 4vw;
+}
+
+.swiper-slide-active .s-left-text {
+  animation: slideFromLeft 1.5s ease 0s 1 normal;
+}
+
+@keyframes slideFromLeft {
+  0%, 25% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
