@@ -156,7 +156,7 @@ $feature_padding: 20px;
   bottom: 10%;
   & a{
     color: white;
-    font-family: Loto;
+    font-family: Loto !important;
     font-size: 14px;
     letter-spacing: 1.2px;
     padding-left: 20px;
@@ -278,15 +278,15 @@ position: absolute;
     animation: rollkAnime 3.5s linear infinite;
     animation-fill-mode:backwords;
   }
-  .product_kv & {
+  .product & {
     position: absolute;
-    top: 28%;
+    top: 0%;
     left: 50%;
-    // transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
     color: #fff;
     width: 70px;
     height: 70px;
-    animation: rollzAnime 1s , rollkAnime 3.5s linear infinite;
+    animation: rollzAnime 1s , rollpAnime 3.5s linear infinite;
     animation-fill-mode:backwords;
   }
 }
@@ -298,6 +298,16 @@ position: absolute;
 
   100% {
     transform: translate(-50%,-76%) rotate(360deg);
+  }
+}
+
+@keyframes rollpAnime {
+  0% {
+    transform: translate(-50%,50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%,50%) rotate(360deg);
   }
 }
 

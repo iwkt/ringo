@@ -238,7 +238,7 @@ p {
 
 .larn_more a {
   color: white;
-  font-family: Loto;
+  font-family: Loto !important;
   font-size: 14px;
   letter-spacing: 1.2px;
   padding-left: 20px;
@@ -370,15 +370,17 @@ p {
           animation-fill-mode: backwords;
 }
 
-.product_kv .roll_circle {
+.product .roll_circle {
   position: absolute;
-  top: 28%;
+  top: 0%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #fff;
   width: 70px;
   height: 70px;
-  -webkit-animation: rollzAnime 1s , rollkAnime 3.5s linear infinite;
-          animation: rollzAnime 1s , rollkAnime 3.5s linear infinite;
+  -webkit-animation: rollzAnime 1s , rollpAnime 3.5s linear infinite;
+          animation: rollzAnime 1s , rollpAnime 3.5s linear infinite;
   -webkit-animation-fill-mode: backwords;
           animation-fill-mode: backwords;
 }
@@ -402,6 +404,28 @@ p {
   100% {
     -webkit-transform: translate(-50%, -76%) rotate(360deg);
             transform: translate(-50%, -76%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rollpAnime {
+  0% {
+    -webkit-transform: translate(-50%, 50%) rotate(0deg);
+            transform: translate(-50%, 50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50%) rotate(360deg);
+            transform: translate(-50%, 50%) rotate(360deg);
+  }
+}
+
+@keyframes rollpAnime {
+  0% {
+    -webkit-transform: translate(-50%, 50%) rotate(0deg);
+            transform: translate(-50%, 50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50%) rotate(360deg);
+            transform: translate(-50%, 50%) rotate(360deg);
   }
 }
 
