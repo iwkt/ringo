@@ -230,6 +230,20 @@ p {
           animation-fill-mode: forwards;
 }
 
+.larn_more {
+  position: absolute;
+  left: 30%;
+  bottom: 10%;
+}
+
+.larn_more a {
+  color: white;
+  font-family: Lota;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  padding-left: 20px;
+}
+
 .line_dot {
   position: absolute;
   top: 40%;
@@ -477,6 +491,10 @@ p {
   height: 450px;
 }
 
+.produxt-atic-ttl {
+  font-size: 24px;
+}
+
 .section_title {
   color: red;
   font-family: Lato;
@@ -563,6 +581,47 @@ p {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
+}
+
+.s-left-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 4vw;
+}
+
+.swiper-slide-active .s-left-text {
+  -webkit-animation: slideFromLeft 1.5s ease 0s 1 normal;
+          animation: slideFromLeft 1.5s ease 0s 1 normal;
+}
+
+@-webkit-keyframes slideFromLeft {
+  0%, 25% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0%, 25% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .watch_movie {
@@ -656,47 +715,6 @@ p {
     opacity: 1;
   }
   100% {
-    opacity: 1;
-  }
-}
-
-.s-left-text {
-  position: absolute;
-  top: 60%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 4vw;
-}
-
-.swiper-slide-active .s-left-text {
-  -webkit-animation: slideFromLeft 1.5s ease 0s 1 normal;
-          animation: slideFromLeft 1.5s ease 0s 1 normal;
-}
-
-@-webkit-keyframes slideFromLeft {
-  0%, 25% {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes slideFromLeft {
-  0%, 25% {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
     opacity: 1;
   }
 }
