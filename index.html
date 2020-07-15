@@ -46,21 +46,21 @@
               <div class="swiper-slide">
                 <img src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
                 <div class="swiper-text"> 
-                  <h3 class="news_article">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h3>
+                  <h3 class="feature_news_article">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h3>
                   <p class="news_date">2020.06.03</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/images/RINGO_new_02-840x473.jpg" alt="">
                 <div class="swiper-text">
-                  <h3 class="news_article">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
+                  <h3 class="feature_news_article">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
                   <p class="news_date">2020.05.03</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="./assets/images/ogp_logo.jpg" alt="">
                 <div class="swiper-text">
-                  <h3 class="news_article">店舗の営業時間短縮・休館についてのお知らせ</h3>
+                  <h3 class="feature_news_article">店舗の営業時間短縮・休館についてのお知らせ</h3>
                   <p class="news_date">2020.03.03</p>
                 </div>
               </div>
@@ -73,7 +73,7 @@
                 <div class="swiper-button-next"></div>
               </div>
               <div class="circle_arrow col-6-bottom">
-                <img src="./assets/images/circle_arrow.svg" alt="">
+                <img  class="arr" src="./assets/images/circle_arrow.svg" alt="">
                 <a href="#">NEWS LIST</a>
               </div>
             </div>
@@ -155,7 +155,7 @@
         </div><!--produxt_kv-->
         <div class="larn_more">
           <!-- <img class="circle_arrow" src="./assets/images/circle_arrow.svg" alt=""> -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
+          <svg  class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
             <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
               <g class="circle_arrow_white" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none" stroke="#e4002b" stroke-width="1">
                 <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
@@ -165,14 +165,14 @@
                 stroke="#e4002b" stroke-width="2" />
             </g>
           </svg>
-          <a href="#">LARN MORE</a>
+          <a class="arr_text" href="#">LARN MORE</a>
         </div>
       </section>
 
       <section id="ShopSlide">
         <div class="shop_container">
           <div class="about_title sm-12">
-            <p class="section_title shop">shop</p>
+            <p class="section_title shop">SHOP</p>
           </div>
           <div class="shop_pict cover_slide sm-12">
             <!-- <div class="cover_slide sm-12"> -->
@@ -185,24 +185,95 @@
               <h2>ららぽーと豊洲３店</h2>
               <p>2020年6月1日（月）オープン <br> 
                 東京都江東区豊洲2-2-1 B1F 豊洲ベイサイドクロスタワー内</p>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
-              <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
-                <g class="circle_arrow_white" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none"
-                  stroke="#e4002b" stroke-width="1">
-                  <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
-                  <circle cx="12.5" cy="12.5" r="12" fill="none" />
-                </g>
-                <path class="circle_arrow_white" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38"
-                  transform="translate(38 -24)" fill="none" stroke="#e4002b" stroke-width="2" />
-              </g>
-            </svg>
+                <div class="arr_linkage">
+                  <svg  class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
+                    <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
+                      <g class="circle_arrow_white" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none"
+                        stroke="#e4002b" stroke-width="1">
+                        <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
+                        <circle cx="12.5" cy="12.5" r="12" fill="none" />
+                      </g>
+                      <path class="circle_arrow_white" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38"
+                        transform="translate(38 -24)" fill="none" stroke="#e4002b" stroke-width="2" />
+                    </g>
+                  </svg>
+                  <a class="arr_text" href="">SHOP</a>
+                </div><!-- arr_linkage -->
+            </div><!--shop_inner-->
           </div>
         </div><!--shop_container-->
 
       </section>
       
       <button onclick="document.querySelector('.cover_slide').classList.toggle('inview');">Animation</button>
+
+      <section id="News">
+        <div class="about_title sm-12">
+          <p class="section_title news">NEWS</p>
+        </div>
+        <div class="news_inner">
+          <div class="arr_linkage">
+            <svg class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
+              <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
+                <g class="circle_arrow_red" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none"
+                  stroke="#e4002b" stroke-width="1">
+                  <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
+                  <circle cx="12.5" cy="12.5" r="12" fill="none" />
+                </g>
+                <path class="circle_arrow_red" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38"
+                  transform="translate(38 -24)" fill="none" stroke="#e4002b" stroke-width="2" />
+              </g>
+            </svg>
+            <a class="arr_text red" href="">NEWS LIST</a>
+          </div><!-- arr_linkage -->
+          <div class="news_columns grid">
+            <div class="news_column col-6 grid-center">
+              <ul class="col-11">
+                <li>
+                  <img class="news_column_pict" src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
+                </li>
+                <li>
+                  <h4 class="news_ttl">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h4>
+                </li>
+                <li class="news_date">2020.06.03</li>
+              </ul>
+            </div>
+            <div class="news_column col-6 grid-center">
+              <ul class="col-11">
+                <li>
+                <img class="news_column_pict" class="col-12" src="./assets/images/ONLINE_TOP-750x422.jpg" alt=""></li>
+                <li>
+                  <h4 class="news_ttl">BAKE Inc.公式オンラインショップ「BAKE THE ONLINE」オープン！</h4>
+                </li>
+                <li class="news_date">2020.04.03</li>
+              </li>
+            </div>
+
+            <div class="news_column col-6 grid-center">
+              <ul class="col-11">
+                <li>
+                  <img class="news_column_pict" class="col-12" src="./assets/images/RINGO_new_02-840x473.jpg" alt=""></li>
+                <li>
+                  <h4 class="news_ttl">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h4>
+                </li>
+                <li class="news_date">2020.04.03</li>
+                </li>
+            </div>
+
+            <div class="news_column col-6 grid-center">
+              <ul class="col-11">
+                <li>
+                  <img class="news_column_pict" class="col-12" src="./assets/images/berrygarden_blueberry_ogp-750x422.jpg" alt=""></li>
+                <li>
+                  <h4 class="news_ttl">BERRY GARDEN 第2弾は、ブルーベリーの美味しさがぎゅっと凝縮された、豊潤な香り広がる「焼きたてカスタードブルーベリーパイ」。</h4>
+                </li>
+                <li class="news_date">2020.04.03</li>
+                </li>
+            </div>
+            
+          </div><!--NEWS_colums grid-->
+        </div><!--NEWS_inner-->
+      </section><!-- section News -->
 
       
     </main>

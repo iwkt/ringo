@@ -48,6 +48,8 @@ p {
 
 .animate-title span {
   margin-right: 0;
+  font-size: 18px;
+  font-family: Lato;
 }
 
 .animate-title.inview {
@@ -168,6 +170,26 @@ p {
   }
 }
 
+.arr {
+  vertical-align: middle;
+}
+
+.arr_linkage {
+  text-align: right;
+}
+
+.arr_text {
+  color: white;
+  font-family: Lato !important;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  padding-left: 10px;
+}
+
+.arr_text.red {
+  color: #d3032b;
+}
+
 .bottom_logo {
   position: absolute;
   bottom: 0;
@@ -188,8 +210,6 @@ p {
   padding-left: 12px;
   font-family: Lato;
   font-weight: 700;
-  vertical-align: middle;
-  line-height: 1.2;
   letter-spacing: 1.2px;
 }
 
@@ -240,14 +260,6 @@ p {
   bottom: 10%;
   width: 100%;
   text-align: center;
-}
-
-.larn_more a {
-  color: white;
-  font-family: Lato !important;
-  font-size: 14px;
-  letter-spacing: 1.2px;
-  padding-left: 20px;
 }
 
 .line_dot {
@@ -324,7 +336,7 @@ p {
           transform-origin: left;
 }
 
-.news_article {
+.feature_news_article {
   color: #131313;
   font-family: Lato;
   font-size: 15px;
@@ -335,12 +347,49 @@ p {
           font-feature-settings: 'palt';
 }
 
+.news_column {
+  margin-bottom: 50px !important;
+}
+
 .news_date {
   color: #999;
   font-size: 12px;
   margin-top: 10px;
   letter-spacing: 0.1rem;
   margin-top: 20px;
+}
+
+.news_inner {
+  padding: 0 10px 50px;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.news_ttl {
+  font-size: 13px;
+  font-weight: 700;
+  color: #575757;
+  line-height: 1.3rem;
+  padding-top: 15px;
+  letter-spacing: 1.2px;
+  -webkit-font-feature-settings: 'palt';
+          font-feature-settings: 'palt';
+}
+
+.news_wrapper h2, .news_wrapper p {
+  color: white !important;
+  font-family: Lato;
+  margin: 0 0 10px;
+}
+
+.news_wrapper h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.news_wrapper p {
+  font-size: 13px;
+  line-height: 1.2rem;
 }
 
 .mv,
@@ -548,6 +597,11 @@ p {
 
 .section_title.product {
   color: #fff;
+}
+
+.section_title.news {
+  padding-bottom: 10px;
+  color: #959595;
 }
 
 .shop_inner {

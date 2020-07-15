@@ -64,6 +64,8 @@ $feature_padding: 20px;
 
   & span {
     margin-right: 0;
+    font-size: 18px;
+    font-family: Lato;
   }
 
   &.inview {
@@ -101,6 +103,26 @@ $feature_padding: 20px;
   }
 }
 
+.arr {
+  vertical-align: middle;
+}
+
+.arr_ {
+  &linkage {
+    text-align: right;
+  }
+  &text {
+    color: white;
+    font-family: Lato !important;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    padding-left: 10px;
+    &.red {
+      color: #d3032b;
+    }
+  }
+}
+
 .bottom_logo {
   position: absolute;
   bottom: 0;
@@ -117,8 +139,6 @@ $feature_padding: 20px;
     padding-left: 12px;
     font-family: Lato;
     font-weight: 700;
-    vertical-align: middle;
-    line-height: 1.2;
     letter-spacing: 1.2px;
   }
   &_white {
@@ -159,13 +179,6 @@ $feature_padding: 20px;
   bottom: 10%;
   width: 100%;
   text-align: center;
-  & a{
-    color: white;
-    font-family: Lato !important;
-    font-size: 14px;
-    letter-spacing: 1.2px;
-    padding-left: 20px;
-  }
 }
 
 .line_dot {
@@ -230,8 +243,9 @@ position: absolute;
   }
   
 }
+//ハンバーガーmenuここまで============= 
 
-.news_ {
+.feature_news_ {
   &article {
     color: #131313;
     font-family: Lato;
@@ -241,7 +255,12 @@ position: absolute;
     line-height: 1.4rem;
     font-feature-settings: 'palt';
   }
+}
 
+.news_ {
+  &column {
+    margin-bottom: 50px !important;
+  }
   &date {
     color: #999;
     font-size: 12px;
@@ -249,9 +268,36 @@ position: absolute;
     letter-spacing: 0.1rem;
     margin-top: 20px;
   }
+  &inner {
+    padding: 0 10px 50px;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+  }
+  &ttl {
+    font-size: 13px;
+    font-weight: 700;
+    color: #575757;
+    line-height: 1.3rem;
+    padding-top: 15px;
+    letter-spacing: 1.2px;
+    font-feature-settings: 'palt';
+  }
+  &wrapper {
+    & h2,p {
+      color: white !important;
+      font-family: Lato;
+      margin: 0 0 10px;
+    }
+    & h2 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    & p {
+      font-size: 13px;
+      line-height: 1.2rem;
+    }
+  }
 }
-
-//ハンバーガーmenu============= 
 
 .mv,
 .product {
@@ -416,6 +462,10 @@ position: absolute;
   }
   &.product {
     color: #fff;
+  }
+  &.news {
+    padding-bottom: 10px;
+    color: #959595;
   }
 }
 
