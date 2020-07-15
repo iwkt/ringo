@@ -108,18 +108,21 @@ $feature_padding: 20px;
   transform: translate(-50%, 0);
   width: 80%;
 }
-.circle_allow {
+.circle_arrow {
   display: inline-block;
   text-align: right;
   & a {
     color: #d3032b;
     font-size:12px;
     padding-left: 12px;
-    font-family: Loto;
+    font-family: Lato;
     font-weight: 700;
     vertical-align: middle;
     line-height: 1.2;
     letter-spacing: 1.2px;
+  }
+  &_white {
+    stroke: #ffffff !important;
   }
 }
 
@@ -152,11 +155,13 @@ $feature_padding: 20px;
 
 .larn_more {
   position: absolute;
-  left: 30%;
+  left: 0%;
   bottom: 10%;
+  width: 100%;
+  text-align: center;
   & a{
     color: white;
-    font-family: Loto !important;
+    font-family: Lato !important;
     font-size: 14px;
     letter-spacing: 1.2px;
     padding-left: 20px;
@@ -172,9 +177,10 @@ position: absolute;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0;
+    transform-origin: top;
+    transition: all .3s ease;
+    transition-delay: 1000ms;
     &.inview {
-      animation: pieAnime 1s;
-      transform-origin: top;
       opacity: 1;
     }
 }
@@ -279,13 +285,25 @@ position: absolute;
     animation-fill-mode:backwords;
   }
   .product & {
+    // position: absolute;
+    // top: 0%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+    // color: #fff;
+    // width: 70px;
+    // height: 70px;
+
     position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    width: 70px;
-    height: 70px;
+    top: 11%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // text-align: center;
+    width: 60px;
+    height: 60px;
+    /* display: block; */
+    margin: 0 auto;
+
     animation: rollzAnime 1s , rollpAnime 3.5s linear infinite;
     animation-fill-mode:backwords;
   }
@@ -303,11 +321,11 @@ position: absolute;
 
 @keyframes rollpAnime {
   0% {
-    transform: translate(-50%,50%) rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: translate(-50%,50%) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -329,20 +347,23 @@ position: absolute;
   &icon {
     display: inline-block;
     position: absolute;
-    top: 28%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%, -125%);
       &::after {
         content: "";
         position: absolute;
+        display: block;
         height: 50px;
         border-right: 2px dotted white;
         right: 10px;
         top: 20px;
         transform: scaleY(0);
-        // transition: 0.6s ease 0.3s;
         transform-origin: top;
+        transition-delay: 800ms;
+        opacity: .9;
       }
+
     
     &.inview {
       &::after {
@@ -378,8 +399,9 @@ position: absolute;
   }
 }
 
-.produxt-atic-ttl{
+.product-atic-ttl{
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 .section_title {
@@ -394,6 +416,47 @@ position: absolute;
   }
   &.product {
     color: #fff;
+  }
+}
+
+.shop_ {
+  &inner {
+    padding: 0 20px 50px;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2;
+    padding-top: 20%
+  }
+  &pict {
+    position: relative;
+  }
+  &wrapper {
+    background-image: url(../images/background_red.png);
+    background-color:rgba(211,3,4,.9);
+    background-blend-mode:lighten;
+    background-size: cover;
+    margin-bottom: 50px;
+    & h2,p {
+      color: white !important;
+      font-family: Lato;
+      margin: 0 0 10px;
+    }
+    & h2 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    & p {
+      font-size: 13px;
+      line-height: 1.2rem;
+    }
+  }
+  &toyosu {
+    position: absolute;//relative=> .shop_pict
+    top: 90%;
+    left: 5%;
+    width: 32%;
+    max-width: 360px;
+    border: 2px solid white;
   }
 }
 
@@ -441,11 +504,11 @@ position: absolute;
 
 .swiper-button-{
   &prev {
-    background-image: url(../images/allow_r.svg);
+    background-image: url(../images/arrow_r.svg);
     background-size: contain;
   }
   &next {
-    background-image: url(../images/allow_l.svg);
+    background-image: url(../images/arrow_l.svg);
     background-size: contain;
   }
   
@@ -471,11 +534,17 @@ position: absolute;
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 4vw;
+  font-size: 13px;
 }
 
 .swiper-slide-active .s-left-text {
   animation: slideFromLeft 1.5s ease 0s 1 normal;
+}
+
+.s-right-wrap {
+    position: relative;
+    // max-width: 640px;
+    margin: 0 auto;
 }
 
 @keyframes slideFromLeft {
@@ -487,6 +556,13 @@ position: absolute;
     transform: translateX(0px);
     opacity: 1;
   }
+}
+
+.tex_sz13 {
+  font-size: 13px;
+  font-family: Lato;
+  letter-spacing: 2px;
+  line-height: 1.2rem;
 }
 
 .watch_movie {
