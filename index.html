@@ -13,270 +13,406 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   </head>
   <body>
-    <header class="header">
-      <!-- hamburger menu -->
-      <div class="nav_area">
-        <a id="navOpen" class="nav_open">
-          <div></div>
-          <div></div>
-          <div></div>
-        </a>
-      </div>
-      <!-- hamburger menu ここまで-->
-    </header>
-    <main>
-      <div id="Main_Visual1" class="mv">
-        <img class="mv_pict01" src="./assets/images/background_mainvisual.jpg" alt="ringo&pie">
-        <img class="header_logo" src="./assets/images/logo.svg" alt="logo_trim">
-        <img class="bottom_logo" src="./assets/images/logo2.svg" alt="logo_trim">
-        <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
-        <img class="play_btn" src="./assets/images/play.svg" alt="play_btn">
-        <p class="watch_movie">WATCH MOVIE</p>
-      </div>
-      <section id="Feature" class="feature">
-        <div class="feature_title sm-12">
-          <p class="section_title">FEATURE</p>
+    <div id="Global-container">
+      <nav id="MobileMenu" class="mobile_menu">
+        <ul class="mobile_menu__main">
+          <li class="mobile_menu__item">
+            <a><img class="white_ringo" src="./assets/images/logo2.svg"></span></a>
+          </li>
+          <li class="mobile_menu__item">
+            <a href=""><span class="main_ttl">TOP</span></a>
+          </li>
+          <li class="mobile_menu__item">
+            <a href=""><span class="main_ttl">ABOUT</span></a>
+          </li>
+          <li class="mobile_menu__item">
+            <a href=""><span class="main_ttl">PRODUCT</span></a>
+          </li>
+          <li class="mobile_menu__item">
+            <a href=""><span class="main_ttl">SHOP</span></a>
+          </li>
+          <li class="mobile_menu__item">
+            <a href=""><span class="main_ttl">NEWS</span></a>
+          </li>
+          <li class="mobile_menu__item">
+            <a href=""><span class="sub_ttl">RECRUIT</span></a>
+          </li>
+          <li class="mobile_menu__item">
+            <a href=""><span class="sub_ttl">CONTACT</span></a>
+          </li>
+        </ul>
+        <div class="icons col-5-middle">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
         </div>
-        <div class="swiper-parent">
-          <!-- Swiper START -->
-          <div class="swiper-container slider1">
-            <!-- メイン表示部分 -->
-            <div class="swiper-wrapper">
-              <!-- 各スライド -->
-              <div class="swiper-slide">
-                <img src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
-                <div class="swiper-text"> 
-                  <h3 class="feature_news_article">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h3>
-                  <p class="news_date">2020.06.03</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/RINGO_new_02-840x473.jpg" alt="">
-                <div class="swiper-text">
-                  <h3 class="feature_news_article">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
-                  <p class="news_date">2020.05.03</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/ogp_logo.jpg" alt="">
-                <div class="swiper-text">
-                  <h3 class="feature_news_article">店舗の営業時間短縮・休館についてのお知らせ</h3>
-                  <p class="news_date">2020.03.03</p>
-                </div>
-              </div>
+        <ul class="mobile_menu__main">
+          <li>
+            <button class="mobile_menu__online"><span>Online Shop</span></button>
+          </li>
+          <li>
+            <div class="mobile_menu__white_ringo">
+              <img src="./assets/images/logo2.svg" alt="" class="white_ringo">
             </div>
-            <div class="swiper-pagination"></div>
-        
-            <div class="swiper-buttons grid-spaceBetween">
-              <div class="col-5">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-              <div class="circle_arrow col-6-bottom">
-                <img  class="arr" src="./assets/images/circle_arrow.svg" alt="">
-                <a href="#">NEWS LIST</a>
-              </div>
+            <button class="mobile_menu__online"><span>Japanese</span></button>
+          </li>
+        </ul>
+
+<ul class="mobile_menu__main">
+  <li class="mobile_menu__item">
+    <a><img class="white_ringo" src="./assets/images/logo2.svg"></span></a>
+  </li>
+  <li class="mobile_menu__item">
+    <a href=""><span class="main_ttl">TOP</span></a>
+  </li>
+  <li class="mobile_menu__item">
+    <a href=""><span class="main_ttl">ABOUT</span></a>
+  </li>
+  <li class="mobile_menu__item">
+    <a href=""><span class="main_ttl">PRODUCT</span></a>
+  </li>
+  <li class="mobile_menu__item">
+    <a href=""><span class="main_ttl">SHOP</span></a>
+  </li>
+  <li class="mobile_menu__item">
+    <a href=""><span class="main_ttl">NEWS</span></a>
+  </li>
+  <li class="mobile_menu__item">
+    <a href=""><span class="sub_ttl">RECRUIT</span></a>
+  </li>
+  <li class="mobile_menu__item">
+    <a href=""><span class="sub_ttl">CONTACT</span></a>
+  </li>
+</ul>
+
+      </nav>
+      <div id="Container" class="container">
+        <div class="layor"></div>
+        <!--layor-->
+        <header class="header" >
+          <!-- hamburger menu -->
+          <div class="nav_area">
+            <a id="navOpen" class="nav_open">
+              <div></div>
+              <div></div>
+              <div></div>
+            </a>
+          </div>
+          <!-- hamburger menu ここまで-->
+        </header>
+        <main>
+          <div id="Main_Visual1" class="mv">
+            <img class="mv_pict01" src="./assets/images/background_mainvisual.jpg" alt="ringo&pie">
+            <img class="header_logo" src="./assets/images/logo.svg" alt="logo_trim">
+            <img class="bottom_logo" src="./assets/images/logo2.svg" alt="logo_trim">
+            <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
+            <img class="play_btn" src="./assets/images/play.svg" alt="play_btn">
+            <p class="watch_movie">WATCH MOVIE</p>
+          </div>
+          <section id="Feature" class="feature">
+            <div class="feature_title sm-12">
+              <p class="section_title">FEATURE</p>
             </div>
-          </div><!-- container-->
-        </div><!-- parent-->
-        <!-- Swiper END -->
-
-
-      </section>
-      <section id="AboutRingo" class="about">
-        <div class="about_wrapper">
-          <div class="about_title sm-12">
-            <p class="section_title about">ABOUT RINGO</p>
-          </div>
-          <div class="about_inner">
-            <div class="animate-title">
-              とっておきを、みんなのものへ
-            </div>
-            <p><img class="white_ringo" src="./assets/images/logo2.svg" alt=""> は「焼きたてカスタードアップルパイ」の専門店。</p>
-            <p>工房一体型をコンセプトとして、店舗で焼き上げ、いつでも出来たてのアップルパイをご提供しています。</p>
-            <p>お菓子職人が、とびっきりおいしいアップルパイを作るために日夜、工房にこもって作り続けた結果できたご褒美スイーツ。そんなご褒美スイーツを皆様におすそわけする場がRINGOです。</p>
-            <p>毎日店頭で焼き上げる、その1つ1つに思いを込め、究極の美味しさを追求します</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="Product" class="product">
-        <div class="product_kv">
-          <div class="product_title sm-12">
-            <p class="section_title product">Product</p>
-          </div>
-          <div class="swiper-parent">
-            <!-- Swiper START -->
-            <div class="swiper-container slider2">
-              <!-- メイン表示部分 -->
-              <div class="swiper-wrapper">
-                <!-- 各スライド -->
-                <div class="swiper-slide">
-                  <div class="s-left-wrap">
-                    <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
-                    <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_pie.png" alt="play_btn"></a> 
-                    <div class="line_dot"></div>
+            <div class="swiper-parent">
+              <!-- Swiper START -->
+              <div class="swiper-container slider1">
+                <!-- メイン表示部分 -->
+                <div class="swiper-wrapper">
+                  <!-- 各スライド -->
+                  <div class="swiper-slide">
+                    <img src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
+                    <div class="swiper-text"> 
+                      <h3 class="feature_news_article">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h3>
+                      <p class="news_date">2020.06.03</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/RINGO_new_02-840x473.jpg" alt="">
                     <div class="swiper-text">
-                      <span class="s-left-text"><P class="product-atic-ttl">PIE</P><br><p class="tex_sz13"> たっぷりバターを練り込んだ自家製<br>サクサクパイ生地</p></span>
+                      <h3 class="feature_news_article">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
+                      <p class="news_date">2020.05.03</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/ogp_logo.jpg" alt="">
+                    <div class="swiper-text">
+                      <h3 class="feature_news_article">店舗の営業時間短縮・休館についてのお知らせ</h3>
+                      <p class="news_date">2020.03.03</p>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="s-left-wrap">
-                    <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
-                    <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_castard.png" alt="play_btn"></a>
-                    <div class="line_dot"></div>
-                    <div class="swiper-text">
-                      <span class="s-left-text">
-                        <P class="product-atic-ttl">custard cream</P><br><p class="tex_sz13">後入れでたっぷりはいった<br>カスタードクリーム</p>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="s-left-wrap">
-                    <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
-                    <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_apple.png" alt="play_btn"></a>
-                    <div class="line_dot"></div>
-                    <div class="swiper-text">
-                      <span class="s-left-text">
-                        <P class="product-atic-ttl">apple</P><br>
-                        <p class="tex_sz13">ごろごろ食感と香りを楽しめる<br>大きめのキューブカット</p>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div><!-- container-->
-          </div><!-- parent-->
-          <!-- Swiper END -->
-
-        </div><!--produxt_kv-->
-        <div class="larn_more">
-          <!-- <img class="circle_arrow" src="./assets/images/circle_arrow.svg" alt=""> -->
-          <svg  class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
-            <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
-              <g class="circle_arrow_white" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none" stroke="#e4002b" stroke-width="1">
-                <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
-                <circle cx="12.5" cy="12.5" r="12" fill="none" />
-              </g>
-              <path class="circle_arrow_white" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38" transform="translate(38 -24)" fill="none"
-                stroke="#e4002b" stroke-width="2" />
-            </g>
-          </svg>
-          <a class="arr_text" href="#">LARN MORE</a>
-        </div>
-      </section>
-
-      <section id="ShopSlide">
-        <div class="shop_container">
-          <div class="about_title sm-12">
-            <p class="section_title shop">SHOP</p>
-          </div>
-          <div class="shop_pict cover_slide sm-12">
-            <!-- <div class="cover_slide sm-12"> -->
-              <img class="img-zoom" src="./assets/images/background_next_shop.jpg" alt="shop">
-            <!-- </div> -->
-            <img class="shop_toyosu" src="./assets/images/shop-toyosu3-750x422.jpg" alt="">
-          </div><!--shop_pict-->
-          <div class="shop_wrapper ">
-            <div class="shop_inner">
-              <h2>ららぽーと豊洲３店</h2>
-              <p>2020年6月1日（月）オープン <br> 
-                東京都江東区豊洲2-2-1 B1F 豊洲ベイサイドクロスタワー内</p>
-                <div class="arr_linkage">
-                  <svg  class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
-                    <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
-                      <g class="circle_arrow_white" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none"
-                        stroke="#e4002b" stroke-width="1">
-                        <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
-                        <circle cx="12.5" cy="12.5" r="12" fill="none" />
-                      </g>
-                      <path class="circle_arrow_white" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38"
-                        transform="translate(38 -24)" fill="none" stroke="#e4002b" stroke-width="2" />
-                    </g>
-                  </svg>
-                  <a class="arr_text" href="">SHOP</a>
-                </div><!-- arr_linkage -->
-            </div><!--shop_inner-->
-          </div>
-        </div><!--shop_container-->
-
-      </section>
-      
-      <button onclick="document.querySelector('.cover_slide').classList.toggle('inview');">Animation</button>
-
-      <section id="News">
-        <div class="about_title sm-12">
-          <p class="section_title news">NEWS</p>
-        </div>
-        <div class="news_inner">
-          <div class="arr_linkage">
-            <svg class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
-              <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
-                <g class="circle_arrow_red" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none"
-                  stroke="#e4002b" stroke-width="1">
-                  <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
-                  <circle cx="12.5" cy="12.5" r="12" fill="none" />
-                </g>
-                <path class="circle_arrow_red" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38"
-                  transform="translate(38 -24)" fill="none" stroke="#e4002b" stroke-width="2" />
-              </g>
-            </svg>
-            <a class="arr_text red" href="">NEWS LIST</a>
-          </div><!-- arr_linkage -->
-          <div class="news_columns grid">
-            <div class="news_column col-6 grid-center">
-              <ul class="col-11">
-                <li>
-                  <img class="news_column_pict" src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
-                </li>
-                <li>
-                  <h4 class="news_ttl">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h4>
-                </li>
-                <li class="news_date">2020.06.03</li>
-              </ul>
-            </div>
-            <div class="news_column col-6 grid-center">
-              <ul class="col-11">
-                <li>
-                <img class="news_column_pict" class="col-12" src="./assets/images/ONLINE_TOP-750x422.jpg" alt=""></li>
-                <li>
-                  <h4 class="news_ttl">BAKE Inc.公式オンラインショップ「BAKE THE ONLINE」オープン！</h4>
-                </li>
-                <li class="news_date">2020.04.03</li>
-              </li>
-            </div>
-
-            <div class="news_column col-6 grid-center">
-              <ul class="col-11">
-                <li>
-                  <img class="news_column_pict" class="col-12" src="./assets/images/RINGO_new_02-840x473.jpg" alt=""></li>
-                <li>
-                  <h4 class="news_ttl">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h4>
-                </li>
-                <li class="news_date">2020.04.03</li>
-                </li>
-            </div>
-
-            <div class="news_column col-6 grid-center">
-              <ul class="col-11">
-                <li>
-                  <img class="news_column_pict" class="col-12" src="./assets/images/berrygarden_blueberry_ogp-750x422.jpg" alt=""></li>
-                <li>
-                  <h4 class="news_ttl">BERRY GARDEN 第2弾は、ブルーベリーの美味しさがぎゅっと凝縮された、豊潤な香り広がる「焼きたてカスタードブルーベリーパイ」。</h4>
-                </li>
-                <li class="news_date">2020.04.03</li>
-                </li>
-            </div>
+                <div class="swiper-pagination"></div>
             
-          </div><!--NEWS_colums grid-->
-        </div><!--NEWS_inner-->
-      </section><!-- section News -->
+                <div class="swiper-buttons grid-spaceBetween">
+                  <div class="col-5">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="circle_arrow col-6-bottom">
+                    <img  class="arr" src="./assets/images/circle_arrow.svg" alt="">
+                    <a href="#">NEWS LIST</a>
+                  </div>
+                </div>
+              </div><!-- container-->
+            </div><!-- parent-->
+            <!-- Swiper END -->
 
-      
-    </main>
+
+          </section>
+          <section id="AboutRingo" class="about">
+            <div class="about_wrapper">
+              <div class="about_title sm-12">
+                <p class="section_title about">ABOUT RINGO</p>
+              </div>
+              <div class="about_inner">
+                <div class="animate-title">
+                  とっておきを、みんなのものへ
+                </div>
+                <p><img class="white_ringo" src="./assets/images/logo2.svg" alt=""> は「焼きたてカスタードアップルパイ」の専門店。</p>
+                <p>工房一体型をコンセプトとして、店舗で焼き上げ、いつでも出来たてのアップルパイをご提供しています。</p>
+                <p>お菓子職人が、とびっきりおいしいアップルパイを作るために日夜、工房にこもって作り続けた結果できたご褒美スイーツ。そんなご褒美スイーツを皆様におすそわけする場がRINGOです。</p>
+                <p>毎日店頭で焼き上げる、その1つ1つに思いを込め、究極の美味しさを追求します</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="Product" class="product">
+            <div class="product_kv">
+              <div class="product_title sm-12">
+                <p class="section_title product">Product</p>
+              </div>
+              <div class="swiper-parent">
+                <!-- Swiper START -->
+                <div class="swiper-container slider2">
+                  <!-- メイン表示部分 -->
+                  <div class="swiper-wrapper">
+                    <!-- 各スライド -->
+                    <div class="swiper-slide">
+                      <div class="s-left-wrap">
+                        <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
+                        <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_pie.png" alt="play_btn"></a> 
+                        <div class="line_dot"></div>
+                        <div class="swiper-text">
+                          <span class="s-left-text"><P class="product-atic-ttl">PIE</P><br><p class="tex_sz13"> たっぷりバターを練り込んだ自家製<br>サクサクパイ生地</p></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="s-left-wrap">
+                        <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
+                        <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_castard.png" alt="play_btn"></a>
+                        <div class="line_dot"></div>
+                        <div class="swiper-text">
+                          <span class="s-left-text">
+                            <P class="product-atic-ttl">custard cream</P><br><p class="tex_sz13">後入れでたっぷりはいった<br>カスタードクリーム</p>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="s-left-wrap">
+                        <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
+                        <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_apple.png" alt="play_btn"></a>
+                        <div class="line_dot"></div>
+                        <div class="swiper-text">
+                          <span class="s-left-text">
+                            <P class="product-atic-ttl">apple</P><br>
+                            <p class="tex_sz13">ごろごろ食感と香りを楽しめる<br>大きめのキューブカット</p>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div><!-- container-->
+              </div><!-- parent-->
+              <!-- Swiper END -->
+
+            </div><!--produxt_kv-->
+            <div class="larn_more">
+              <!-- <img class="circle_arrow" src="./assets/images/circle_arrow.svg" alt=""> -->
+              <svg  class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
+                <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
+                  <g class="circle_arrow_white" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none" stroke="#e4002b" stroke-width="1">
+                    <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
+                    <circle cx="12.5" cy="12.5" r="12" fill="none" />
+                  </g>
+                  <path class="circle_arrow_white" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38" transform="translate(38 -24)" fill="none"
+                    stroke="#e4002b" stroke-width="2" />
+                </g>
+              </svg>
+              <a class="arr_text" href="#">LARN MORE</a>
+            </div>
+          </section>
+
+          <section id="ShopSlide">
+            <div class="shop_container">
+              <div class="about_title sm-12">
+                <p class="section_title shop">SHOP</p>
+              </div>
+              <div class="shop_pict cover_slide sm-12">
+                <!-- <div class="cover_slide sm-12"> -->
+                  <img class="img-zoom" src="./assets/images/background_next_shop.jpg" alt="shop">
+                <!-- </div> -->
+                <img class="shop_toyosu" src="./assets/images/shop-toyosu3-750x422.jpg" alt="">
+              </div><!--shop_pict-->
+              <div class="shop_wrapper ">
+                <div class="shop_inner">
+                  <h2>ららぽーと豊洲３店</h2>
+                  <p>2020年6月1日（月）オープン <br> 
+                    東京都江東区豊洲2-2-1 B1F 豊洲ベイサイドクロスタワー内</p>
+                    <div class="arr_linkage">
+                      <svg  class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
+                        <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
+                          <g class="circle_arrow_white" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none"
+                            stroke="#e4002b" stroke-width="1">
+                            <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
+                            <circle cx="12.5" cy="12.5" r="12" fill="none" />
+                          </g>
+                          <path class="circle_arrow_white" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38"
+                            transform="translate(38 -24)" fill="none" stroke="#e4002b" stroke-width="2" />
+                        </g>
+                      </svg>
+                      <a class="arr_text" href="">SHOP</a>
+                    </div><!-- arr_linkage -->
+                </div><!--shop_inner-->
+              </div>
+            </div><!--shop_container-->
+
+          </section>
+          
+          <button onclick="document.querySelector('.cover_slide').classList.toggle('inview');">Animation</button>
+
+          <section id="News">
+            <div class="about_title sm-12">
+              <p class="section_title news">NEWS</p>
+            </div>
+            <div class="news_inner">
+              <div class="arr_linkage">
+                <svg class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
+                  <g id="グループ_8" data-name="グループ 8" transform="translate(-813.323 -737)">
+                    <g class="circle_arrow_red" id="楕円形_7" data-name="楕円形 7" transform="translate(819 737)" fill="none"
+                      stroke="#e4002b" stroke-width="1">
+                      <circle cx="12.5" cy="12.5" r="12.5" stroke="none" />
+                      <circle cx="12.5" cy="12.5" r="12" fill="none" />
+                    </g>
+                    <path class="circle_arrow_red" id="パス_7" data-name="パス 7" d="M790,770.585l5.7,5.816h-20.38"
+                      transform="translate(38 -24)" fill="none" stroke="#e4002b" stroke-width="2" />
+                  </g>
+                </svg>
+                <a class="arr_text red" href="">NEWS LIST</a>
+              </div><!-- arr_linkage -->
+              <div class="news_columns grid">
+                <div class="news_column col-6 grid-center">
+                  <ul class="col-11">
+                    <li>
+                      <img class="news_column_pict" src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
+                    </li>
+                    <li>
+                      <h4 class="news_ttl">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h4>
+                    </li>
+                    <li class="news_date">2020.06.03</li>
+                  </ul>
+                </div>
+                <div class="news_column col-6 grid-center">
+                  <ul class="col-11">
+                    <li>
+                    <img class="news_column_pict" class="col-12" src="./assets/images/ONLINE_TOP-750x422.jpg" alt=""></li>
+                    <li>
+                      <h4 class="news_ttl">BAKE Inc.公式オンラインショップ「BAKE THE ONLINE」オープン！</h4>
+                    </li>
+                    <li class="news_date">2020.04.03</li>
+                  </li>
+                </div>
+
+                <div class="news_column col-6 grid-center">
+                  <ul class="col-11">
+                    <li>
+                      <img class="news_column_pict" class="col-12" src="./assets/images/RINGO_new_02-840x473.jpg" alt=""></li>
+                    <li>
+                      <h4 class="news_ttl">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h4>
+                    </li>
+                    <li class="news_date">2020.04.03</li>
+                    </li>
+                </div>
+
+                <div class="news_column col-6 grid-center">
+                  <ul class="col-11">
+                    <li>
+                      <img class="news_column_pict" class="col-12" src="./assets/images/berrygarden_blueberry_ogp-750x422.jpg" alt=""></li>
+                    <li>
+                      <h4 class="news_ttl">BERRY GARDEN 第2弾は、ブルーベリーの美味しさがぎゅっと凝縮された、豊潤な香り広がる「焼きたてカスタードブルーベリーパイ」。</h4>
+                    </li>
+                    <li class="news_date">2020.04.03</li>
+                    </li>
+                </div>
+
+                <div class="news_column col-6 grid-center">
+                  <ul class="col-11">
+                    <li>
+                      <img class="news_column_pict" class="col-12" src="./assets/images/ringo_02-750x422.jpg" alt=""></li>
+                    <li>
+                      <h4 class="news_ttl">【RINGOオリジナル】オンラインお茶会を彩る、オリジナル壁紙プレゼント</h4>
+                    </li>
+                    <li class="news_date">2020.04.03</li>
+                    </li>
+                </div>
+                
+                <div class="news_column col-6 grid-center">
+                  <ul class="col-11">
+                    <li>
+                      <img class="news_column_pict" class="col-12" src="./assets/images/image2-750x422.jpg" alt="">
+                    </li>
+                    <li>
+                      <h4 class="news_ttl">冷やして美味しい「りんごのグラタン」の作り方 #おうちでBAKEレシピ。</h4>
+                    </li>
+                    <li class="news_date">2020.04.03</li>
+                    </li>
+                </div>
+
+                <div class="news_column col-6 grid-center">
+                  <ul class="col-11">
+                    <li>
+                      <img class="news_column_pict" class="col-12" src="./assets/images/ringo_berygarden_ogp-750x422.jpg" alt=""></li>
+                    <li>
+                      <h4 class="news_ttl">BERRY GARDEN 第1弾は、ストロベリーを主役に、3種のレッドベリーが春を運ぶ、「焼きたてカスタードレッドベリーパイ」。3/20(金)からの期間限定販売。</h4>
+                    </li>
+                    <li class="news_date">2020.03.016</li>
+                    </li>
+                </div>
+                
+                <div class="news_column col-6 grid-center">
+                  <ul class="col-11">
+                    <li>
+                      <img class="news_column_pict" class="col-12" src="./assets/images/ogp_logo.jpg" alt="">
+                    </li>
+                    <li>
+                      <h4 class="news_ttl">店舗の営業時間短縮・休館についてのお知らせ</h4>
+                    </li>
+                    <li class="news_date">2020.03.04</li>
+                    </li>
+                </div>
+                
+              </div><!--NEWS_colums grid-->
+            </div><!--NEWS_inner-->
+          </section><!-- section News -->
+
+          <footer id="Footer">
+            <div class="footer_wrapper">
+              <div class="footer_inner grid">
+                <div class="col-7 grid">
+                  <img class="white_ringo col-5" src="./assets/images/logo2.svg" alt="">
+                  <p class="col-12" >© BAKE all rights reserved.</p>
+                </div>
+                <div class="icons col-5-middle">
+                  <i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i>
+                </div>
+              </div><!--footer inner-->
+            </div>
+          </footer>
+        </main>
+      </div><!--#Continer-->
+    </div><!--#Global container-->
     <script src="./assets/js/humbger.js"></script>
     <script src="./assets/js/text_split.js"></script>
     <script src="./assets/js/scroll.js"></script>
