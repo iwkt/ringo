@@ -258,11 +258,10 @@ p {
 .footer_wrapper h2, .footer_wrapper p {
   color: white !important;
   font-family: Lato;
-  padding: 5px 0 10px;
 }
 
 .footer_wrapper img {
-  padding: 10px 0 5px;
+  padding: 10px 0 0;
 }
 
 .footer_wrapper p {
