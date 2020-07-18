@@ -241,7 +241,10 @@ p {
 }
 
 .footer_inner {
-  padding: 44px 20px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
 }
@@ -267,7 +270,7 @@ p {
 
 .footer_wrapper p {
   display: inline-block;
-  font-size: 11px;
+  width: 100%;
 }
 
 .header_logo {
