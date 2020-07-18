@@ -258,13 +258,8 @@ p {
   font-family: Lato;
 }
 
-.footer_wrapper img {
-  padding: 10px 0 0;
-}
-
 .footer_wrapper p {
   font-size: 10px;
-  line-height: 1.2rem;
 }
 
 .header_logo {
