@@ -410,6 +410,7 @@ position: absolute;
 
 .mv_pict01 {
   height: 420px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -491,7 +492,26 @@ position: absolute;
   }
 }
 // 回転アニメーションここまで=====================
-
+#PC_Menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+//  & div {
+//   padding: 30px;
+//  }
+}
+.pc_menu_main {
+  // position: absolute;
+  // top: 40px;
+  // left: 50px;
+  // & a {
+  //   display: block;
+  // }
+  // & img {
+  //   display: block;
+  // }
+}
 
 .pie_ {
   &icon {

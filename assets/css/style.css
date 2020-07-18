@@ -515,6 +515,7 @@ p {
 
 .mv_pict01 {
   height: 420px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -623,6 +624,13 @@ p {
     width: 70px;
     opacity: 1;
   }
+}
+
+#PC_Menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .pie_icon {

@@ -1,0 +1,10 @@
+@media (min-width: 780px) {
+  #navOpen {
+    display: none;
+  }
+  .mv_pict01 {
+    height: 740px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

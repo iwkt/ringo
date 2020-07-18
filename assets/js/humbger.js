@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // class MobileMenu {
 //   constructor() {
 //     this.DOM = {};
-//     this.DOM.btn = document.getElementById('navOpen');
+//     this.DOM.btn = document.querySelector('#navOpen');
 //     this.DOM.container = document.getElementById('MobileMenu')
 //     this.DOM.btn.addEventListener('click',this._toggle());
 //   }
