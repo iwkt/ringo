@@ -249,6 +249,10 @@ p {
   letter-spacing: 0.1rem;
 }
 
+.footer_inner img {
+  display: block;
+}
+
 .footer_wrapper {
   position: relative;
   background-image: url(../images/background_red.png);
@@ -264,6 +268,7 @@ p {
 }
 
 .footer_wrapper p {
+  display: inline-block;
   font-size: 10px;
 }
 
