@@ -175,13 +175,13 @@ $feature_padding: 20px;
     padding: 20px 20px 0px;
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
-    height: 13vh;
   }
   &wrapper {
     background-image: url(../images/background_red.png);
     background-color:rgba(211,3,4,.9);
     background-blend-mode:lighten;
     background-size: cover;
+    height: 15vh;
     & h2,p {
       color: white !important;
       font-family: Lato;
