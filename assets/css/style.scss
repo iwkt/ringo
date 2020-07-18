@@ -172,16 +172,20 @@ $feature_padding: 20px;
 
 .footer_ {
   &inner {
+    position: absolute;
+    top: 30px;
+    left: 0px;
     padding: 20px 20px 0px;
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
   }
   &wrapper {
+    position: relative;
     background-image: url(../images/background_red.png);
     background-color:rgba(211,3,4,.9);
     background-blend-mode:lighten;
     background-size: cover;
-    height: 15vh;
+    height: 19vh;
     & h2,p {
       color: white !important;
       font-family: Lato;
