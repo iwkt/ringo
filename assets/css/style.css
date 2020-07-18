@@ -221,7 +221,7 @@ p {
 
 .fab {
   color: white;
-  font-size: 22px;
+  font-size: 26px;
   margin-left: 10px;
 }
 
@@ -241,20 +241,18 @@ p {
 }
 
 .footer_inner {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  padding: 20px 20px 0px;
+  padding: 44px 20px;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
 }
 
 .footer_inner img {
   display: block;
+  padding-bottom: 10px;
+  width: 40%;
 }
 
 .footer_wrapper {
-  position: relative;
   background-image: url(../images/background_red.png);
   background-color: rgba(211, 3, 4, 0.9);
   background-blend-mode: lighten;
@@ -269,7 +267,7 @@ p {
 
 .footer_wrapper p {
   display: inline-block;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .header_logo {
