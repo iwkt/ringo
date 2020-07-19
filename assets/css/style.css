@@ -997,4 +997,12 @@ p {
     opacity: 1;
   }
 }
+
+#navOpen.background-- light {
+  color: red;
+}
+
+#navOpen.background-- dark {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
