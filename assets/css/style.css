@@ -260,7 +260,7 @@ p {
   background-color: rgba(211, 3, 4, 0.9);
   background-blend-mode: lighten;
   background-size: cover;
-  height: 19vh;
+  height: 130px;
 }
 
 .footer_wrapper h2, .footer_wrapper p {
