@@ -194,7 +194,7 @@ p {
 
 .bottom_logo {
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -634,9 +634,58 @@ p {
 
 #PC_Menu {
   position: absolute;
-  top: 0;
+  top: 55px;
   left: 0;
   width: 100%;
+}
+
+.pc_nav_logo {
+  width: 108px;
+}
+
+.pc_menu_main {
+  padding: 20px 0 20px 40px;
+}
+
+.pc_menu_main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 23px;
+}
+
+.pc_menu_main a {
+  color: white;
+  letter-spacing: 1.3px;
+  font-size: 16px;
+}
+
+.pc_menu_sub {
+  padding: 20px 40px 20px 0;
+  margin-left: 24% !important;
+}
+
+.pc_menu_sub ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 18px;
+}
+
+.pc_menu_sub a {
+  font-size: 13px;
+  color: white;
+  letter-spacing: 1.3px;
+}
+
+.pc_menu_sub .fab {
+  font-size: 18px;
 }
 
 .pie_icon {
@@ -996,13 +1045,5 @@ p {
   100% {
     opacity: 1;
   }
-}
-
-#navOpen.background-- light {
-  color: red;
-}
-
-#navOpen.background-- dark {
-  color: white;
 }
 /*# sourceMappingURL=style.css.map */

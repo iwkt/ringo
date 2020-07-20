@@ -127,7 +127,7 @@ $feature_padding: 20px;
 
 .bottom_logo {
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 50%;
   transform: translate(-50%, 0);
   width: 80%;
@@ -498,25 +498,50 @@ position: absolute;
   }
 }
 // 回転アニメーションここまで=====================
+
 #PC_Menu {
   position: absolute;
-  top: 0;
+  top: 55px;
   left: 0;
   width: 100%;
-//  & div {
-//   padding: 30px;
-//  }
 }
-.pc_menu_main {
-  // position: absolute;
-  // top: 40px;
-  // left: 50px;
-  // & a {
-  //   display: block;
-  // }
-  // & img {
-  //   display: block;
-  // }
+.pc_ {
+  &nav_logo {
+    width: 108px;
+  }
+  &menu_main {
+    padding: 20px 0 20px 40px;
+  }
+  &menu_main {
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      line-height: 23px;
+    }
+    & a {
+      color: white;
+      letter-spacing: 1.3px;
+      font-size: 16px;
+    }
+  }
+  &menu_sub {
+    padding: 20px 40px 20px 0;
+    margin-left: 24%!important;
+    $pc_nav_size: 18px;
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      line-height: $pc_nav_size;
+    }
+    & a {
+      font-size: 13px;
+      color: white;
+      letter-spacing: 1.3px;
+    }
+    & .fab {
+      font-size: $pc_nav_size;
+    }
+  }
 }
 
 .pie_ {
