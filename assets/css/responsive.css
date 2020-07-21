@@ -1,13 +1,25 @@
-@media (min-width: 780px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   #navOpen {
     display: none;
   }
+  .animate-title {
+    top: -21%;
+  }
+  .bottom_logo {
+    width: 300px;
+  }
   .mv_pict01 {
-    height: 740px;
+    height: 420px;
     width: 100%;
   }
-  .header_logo {
-    display: none;
+  .swiper-wrapper {
+    height: 525px;
+  }
+  .swiper-slide img {
+    height: 432px;
+  }
+  .white_ringo {
+    width: 69px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
