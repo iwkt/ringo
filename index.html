@@ -89,9 +89,17 @@
       <div id="Container" class="container">
         <div class="layor"></div><!--layor-->
         <header class="header" >
+          <div class="pc_lang_btns">
+            <button class="pc_lang_btn">Online Shop</button>
+            <button class="pc_lang_btn">JA</button>
+          </div>
+          <!-- <div class="pc_lang_btns grid">
+            <button class="pc_lang_btn col md-hidden">Online Shop</button>
+            <button class="pc_lang_btn col md-hidden">JA</button>
+          </div> -->
           <!-- hamburger menu -->
-          <div class="nav_area">
-            <a id="navOpen" class="nav_open">
+          <div class="nav_area grid">
+            <a id="navOpen" class="nav_open col-12">
               <div></div>
               <div></div>
               <div></div>
@@ -108,26 +116,26 @@
             <img class="play_btn" src="./assets/images/play.svg" alt="play_btn">
             <p class="watch_movie">WATCH MOVIE</p>
           </div>
-          <nav id="PC_Menu" class="grid_sm-hidden">
-            <div class="pc_menu_main col-6"> 
+          <!-- <nav id="PC_Menu" class="grid-spaceBetween_sm-hidden"> -->
+          <nav id="PC_Menu" class="grid-spaceBetween_sm-hidden">
+            <div class="pc_menu_main col"> 
               <ul>
-                <li><img class="pc_nav_logo" src="./assets/images/logo.svg" alt=""></li>
-                <li><a class="aaa" href="#">TOP</a></li>
-                <li><a class="aaa" href="#">ABOUT</a></li>
-                <li><a class="aaa" href="#">PRODUCT</a></li>
-                <li><a class="col" href="#">SHOP</a></li>
-                <li><a class="col" href="#">NEWS</a></li>
+                <li>
+                  <div class="col"><img class="pc_nav_logo" src="./assets/images/logo.svg" alt=""></div></li>
+                <li>
+                  <div class="col"><a class="hv" href="#"><span>TOP</span><span>TOP</span></a></div></li>
+                <li>
+                  <div class="col"><a class="hv" href="#"><span>ABOUT</span><span>ABOUT</span></a></div></li>
+                <li>
+                  <div class="col"><a class="hv" href="#"><span>PRODUCT</span><span>PRODUCT</span></a></div></li>
+                <li>
+                  <div class="col"><a class="hv" href="#"><span>SHOP</span><span>SHOP</span></a></div></li>
+                <li>
+                  <div class="col"><a class="hv" href="#"><span>NEWS</span><span>NEWS</span></a></div></li>
               </ul>            
-              <!-- <img class="col" src="./assets/images/logo.svg" alt="" style="max-width: 124px;">
-              <a class="col"href="#">TOP</a>
-              <a class="col"href="#">ABOUT</a>
-              <a class="col"href="#">PRODUCT</a>
-              <a class="col" href="#">SHOP</a>
-              <a class="col" href="#">NEWS</a> -->
-
-              
             </div>
-            <div class="pc_menu_sub col-3_sm-4" data-push-left="off-2">
+            <div class="pc_menu_sub col-3_sm-4" data-push-left="off-3">
+            <!-- <div class="pc_menu_sub col-4_sm-4" data-push-left="off-1"></div> -->
               <ul>
                 <li><a class="aaa" href="#">RECRUIT</a></li>
                 <li><a class="aaa" href="#">CONTACT</a></li>
@@ -138,6 +146,7 @@
                 </li>
               </ul>
             </div>
+            <div class="pc_textOnlineShop col-12">Online Shop</div>
           </nav>
           <section id="Feature" class="feature">
             <div class="feature_title sm-12">

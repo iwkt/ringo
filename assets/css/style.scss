@@ -506,11 +506,30 @@ position: absolute;
   width: 100%;
 }
 .pc_ {
+  &lang_btn {
+    width: 120px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1.3px;
+    &:nth-of-type(2) {
+      margin-left: 20px;
+      width: 65px;
+    }
+  }
+  &lang_btns {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: 100;
+  }
   &nav_logo {
     width: 108px;
   }
   &menu_main {
     padding: 20px 0 20px 40px;
+    max-width: 540px;
+    min-width: 540px;
   }
   &menu_main {
     & ul {
@@ -519,14 +538,17 @@ position: absolute;
       line-height: 23px;
     }
     & a {
+      display: inline-block;
       color: white;
       letter-spacing: 1.3px;
       font-size: 16px;
+      width: 80px;
+      height: 23px;
     }
   }
   &menu_sub {
     padding: 20px 40px 20px 0;
-    margin-left: 24%!important;
+    // margin: 0 0 0 auto!important;
     $pc_nav_size: 18px;
     & ul {
       display: flex;
@@ -541,6 +563,12 @@ position: absolute;
     & .fab {
       font-size: $pc_nav_size;
     }
+  }
+  &textOnlineShop {
+    padding: 40px 0 0 20px;
+    font-family: Lato;
+    color: white;
+    letter-spacing: 1.3px;
   }
 }
 
@@ -828,3 +856,37 @@ position: absolute;
 }
 
 //　-------------------------------------
+.hv {
+  display: block;
+  position: relative;
+}
+.hv span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  text-align: center;
+
+  transform-style: preserve-3d;
+  transition: 0.4s cubic-bezier(.2,1,.3,1);
+}
+
+.hv span:nth-child(1) {
+  transform: rotateX(0deg);
+  transform-origin: center center -15px;
+}
+
+.hv span:nth-child(2) {
+  transform: rotateX(-90deg);
+  transform-origin: center center -15px;
+}
+
+.hv:hover span:nth-child(1) {
+  transform: rotateX(90deg);
+}
+
+.hv:hover span:nth-child(2) {
+  transform: rotateX(0deg);
+}

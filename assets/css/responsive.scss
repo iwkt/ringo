@@ -21,6 +21,9 @@
   .bottom_logo {
     width: 300px;
   }
+  .header_logo {
+    display: none;
+  }
   .mv_pict01 {
     height: 420px;
     width: 100%;
@@ -35,5 +38,20 @@
   }
   .white_ringo {
     width: 69px;
+  }
+}
+
+@media(min-width:1024px) {
+  #navOpen {
+    display: none;
+  }
+  .bottom_logo {
+    width: 803px;
+  }
+  .header_logo {
+    display: none;
+  }
+  .mv_pict01 {
+    height: 835px;
   }
 }
