@@ -89,9 +89,9 @@
       <div id="Container" class="container">
         <div class="layor"></div><!--layor-->
         <header class="header" >
-          <div class="pc_lang_btns">
-            <button class="pc_lang_btn">Online Shop</button>
-            <button class="pc_lang_btn">JA</button>
+          <div class="pc_lang_btns grid sm-hidden">
+            <button class="pc_lang_btn col">Online Shop</button>
+            <button class="pc_lang_btn col">JA</button>
           </div>
           <!-- <div class="pc_lang_btns grid">
             <button class="pc_lang_btn col md-hidden">Online Shop</button>
@@ -134,7 +134,7 @@
                   <div class="col"><a class="hv" href="#"><span>NEWS</span><span>NEWS</span></a></div></li>
               </ul>            
             </div>
-            <div class="pc_menu_sub col-3_sm-4" data-push-left="off-3">
+            <div class="pc_menu_sub col_sm-4">
             <!-- <div class="pc_menu_sub col-4_sm-4" data-push-left="off-1"></div> -->
               <ul>
                 <li><a class="aaa" href="#">RECRUIT</a></li>
@@ -149,51 +149,95 @@
             <div class="pc_textOnlineShop col-12">Online Shop</div>
           </nav>
           <section id="Feature" class="feature">
-            <div class="feature_title sm-12">
-              <p class="section_title">FEATURE</p>
+            <div class="mobile_feature">
+              <div class="feature_title">
+                <p class="section_title">FEATURE</p>
+              </div>
+              <div class="swiper-parent">
+                <!-- Swiper START -->
+                <div class="swiper-container slider1">
+                  <!-- メイン表示部分 -->
+                  <div class="swiper-wrapper">
+                    <!-- 各スライド -->
+                    <div class="swiper-slide">
+                      <img src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
+                      <div class="swiper-text"> 
+                        <h3 class="feature_news_article">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h3>
+                        <p class="news_date">2020.06.03</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/RINGO_new_02-840x473.jpg" alt="">
+                      <div class="swiper-text">
+                        <h3 class="feature_news_article">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
+                        <p class="news_date">2020.05.03</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/ogp_logo.jpg" alt="">
+                      <div class="swiper-text">
+                        <h3 class="feature_news_article">店舗の営業時間短縮・休館についてのお知らせ</h3>
+                        <p class="news_date">2020.03.03</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              
+                  <div class="swiper-buttons grid-spaceBetween">
+                    <div class="col-5">
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="circle_arrow col-6-bottom">
+                      <img  class="arr" src="./assets/images/circle_arrow.svg" alt="">
+                      <a href="#">NEWS LIST</a>
+                    </div>
+                  </div>
+                </div><!-- container-->
+              </div><!-- parent-->
             </div>
-            <div class="swiper-parent">
-              <!-- Swiper START -->
-              <div class="swiper-container slider1">
-                <!-- メイン表示部分 -->
-                <div class="swiper-wrapper">
-                  <!-- 各スライド -->
-                  <div class="swiper-slide">
-                    <img src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
-                    <div class="swiper-text"> 
-                      <h3 class="feature_news_article">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h3>
-                      <p class="news_date">2020.06.03</p>
+            <div class="pc_feature grid-12 sm-hidden">
+              <div class="left_side_logo col-1"></div>
+              <div class="pc-swiper-parent col-10">
+                <!-- Swiper START -->
+                <div class="swiper-container slider_pc">
+                  <!-- メイン表示部分 -->
+                  <div class="swiper-wrapper">
+                    <!-- 各スライド -->
+                    <div class="swiper-slide">
+                      <div class="s-right-wrap">
+                        <img src="./assets/images/beedf1231d9e4d15c7be043f7d1f9453-750x422.jpg" alt="">
+                      </div>
+                      <div class="swiper-text">
+                        <h3 class="feature_news_article">夏に旬を迎えるピーチを使ったフレーバーが初登場！ 「焼きたてカスタードピーチパイ」</h3>
+                        <p class="news_date">2020.06.03</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/RINGO_new_02-840x473.jpg" alt="">
+                      <div class="swiper-text">
+                        <h3 class="feature_news_article">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
+                        <p class="news_date">2020.05.03</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/ogp_logo.jpg" alt="">
+                      <div class="swiper-text">
+                        <h3 class="feature_news_article">店舗の営業時間短縮・休館についてのお知らせ</h3>
+                        <p class="news_date">2020.03.03</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/images/RINGO_new_02-840x473.jpg" alt="">
-                    <div class="swiper-text">
-                      <h3 class="feature_news_article">BAKEアプリ システム障害のお詫びとお知らせ（更新）</h3>
-                      <p class="news_date">2020.05.03</p>
-                    </div>
+                  <div class="swiper-pagination"></div>
+              
+                  <div class="swiper-buttons">
+                    <div class="swiper-button-prev_pc"></div>
+                    <div class="swiper-button-next_pc"></div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/images/ogp_logo.jpg" alt="">
-                    <div class="swiper-text">
-                      <h3 class="feature_news_article">店舗の営業時間短縮・休館についてのお知らせ</h3>
-                      <p class="news_date">2020.03.03</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            
-                <div class="swiper-buttons grid-spaceBetween">
-                  <div class="col-5">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                  </div>
-                  <div class="circle_arrow col-6-bottom">
-                    <img  class="arr" src="./assets/images/circle_arrow.svg" alt="">
-                    <a href="#">NEWS LIST</a>
-                  </div>
-                </div>
-              </div><!-- container-->
-            </div><!-- parent-->
+                </div><!-- container-->
+              </div><!-- parent-->
+              <div class="right_side_logo col-1"></div>
+            </div>
             <!-- Swiper END -->
           </section>
           <section id="AboutRingo" class="about">
