@@ -328,6 +328,12 @@ p {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.left_side_ttl {
+  -webkit-writing-mode: sideways-lr;
+      -ms-writing-mode: sideways-lr;
+          writing-mode: sideways-lr;
+}
+
 .line_dot {
   position: absolute;
   top: 40%;
@@ -793,7 +799,7 @@ p {
   text-transform: uppercase;
 }
 
-.right_side_logo {
+.right_side_ttl {
   background-color: #e4002b;
 }
 

@@ -246,6 +246,10 @@ $feature_padding: 20px;
   background-color: rgba(255, 255, 255,.5);
 }
 
+.left_side_ttl {
+  writing-mode: sideways-lr;
+}
+
 .line_dot {
 position: absolute;
     top: 40%;
@@ -633,7 +637,7 @@ position: absolute;
   text-transform: uppercase;
 }
 
-.right_side_logo{
+.right_side_ttl{
   background-color: #e4002b;
 }
 
