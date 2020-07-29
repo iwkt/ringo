@@ -210,6 +210,29 @@ $feature_padding: 20px;
   z-index: 100;
 }
 
+.hover_dark {
+  position: relative;
+  overflow: hidden;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transform: translateX(100%);
+    background-color: rgba($color: #363636, $alpha: 0.1);
+    transition: all 0.2s;
+    // transform-origin: 100% 100%;
+    // animation-fill-mode: forwards;
+  }
+  &:hover::before {
+    transform: none;
+
+  }
+}
+
 .icons {
   text-align: right;
   padding-bottom: 10px 0 10px;
@@ -457,14 +480,11 @@ position: absolute;
     position: absolute;
     top: 11%;
     right: 0;
-    bottom: 0;
+    // bottom: 0;
     left: 0;
-    // text-align: center;
     width: 60px;
     height: 60px;
-    /* display: block; */
     margin: 0 auto;
-
     animation: rollzAnime 1s , rollpAnime 3.5s linear infinite;
     animation-fill-mode:backwords;
   }

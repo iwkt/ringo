@@ -46,14 +46,27 @@
   #navOpen {
     display: none;
   }
+  .animate-title {
+    top: -20%;
+  }
   .bottom_logo {
     width: 803px;
   }
   .header_logo {
     display: none;
   }
-  .mobile_feature {
-    display: none;
+  .line_dot {
+    top: 132px;
+    left: 25px;
+    opacity: 1;
+  }
+  .mobile_{
+    &feature {
+      display: none;
+    }
+    &product {
+      display: none;
+    }
   }
   .mv_pict01 {
     height: 1256px;
@@ -77,6 +90,9 @@
     // width: calc(100% - 100px);	/* ☆前・次ページボタンの幅をそれぞれ50pxとして、その分を引く */
     // padding-bottom: 50px;		/* ★ページネーション・スクロールバー分の余白50pxを下に取る */
     // box-sizing: content-box;
+      &.slider2 {
+        height: 500px;
+      }
     }
     &pagination {
       // position: static;
@@ -114,6 +130,11 @@
     &pagination-bullet-active {
       background: red;
     }
+  }
+
+  .product_kv {
+    height: 945px;
+    width: auto;
   }
 
   .swiper-button-{
@@ -166,6 +187,61 @@
     /* display: block; */
     margin: 0 auto;
     text-align: center;
-}
+  }
   //swiperここまで
+
+  .pie_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .pie_ {
+  &icon {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 100%;
+    // transform: translate(-50%, -125%);
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 80px;
+        border-right: 2px dotted white;
+        right: 17px;
+        top: 36px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition-delay: 800ms;
+        opacity: .9;
+      }
+    }
+  }
+
+  .pc_ft_pie {
+    position: relative;
+    &_wrapper {
+      position: absolute;
+      top: 15%;
+      left: 17%;
+      width: 60px;
+      height: 60px;
+      }
+  }
+  .pc- {
+  &swiper-text {
+    position: absolute;
+    top: 127px;
+    left: 50px;
+    color: #fff;
+    width: 300px;
+    }
+  }
+  .product .roll_circle {
+    
+  }
+  .roll_circle {
+    display: block;
+  }
 }

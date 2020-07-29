@@ -31,13 +31,24 @@
   #navOpen {
     display: none;
   }
+  .animate-title {
+    top: -20%;
+  }
   .bottom_logo {
     width: 803px;
   }
   .header_logo {
     display: none;
   }
+  .line_dot {
+    top: 132px;
+    left: 25px;
+    opacity: 1;
+  }
   .mobile_feature {
+    display: none;
+  }
+  .mobile_product {
     display: none;
   }
   .mv_pict01 {
@@ -54,6 +65,9 @@
     width: 98%;
     height: 84%;
     padding-top: 60px;
+  }
+  .swiper-container.slider2 {
+    height: 500px;
   }
   .swiper-pagination {
     position: absolute;
@@ -85,6 +99,10 @@
   }
   .swiper-pagination-bullet-active {
     background: red;
+  }
+  .product_kv {
+    height: 945px;
+    width: auto;
   }
   .swiper-button-prev_pc {
     background-image: url(../images/arrow_r.svg);
@@ -127,6 +145,53 @@
     /* display: block; */
     margin: 0 auto;
     text-align: center;
+  }
+  .pie_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .pie_icon {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 100%;
+  }
+  .pie_icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 80px;
+    border-right: 2px dotted white;
+    right: 17px;
+    top: 36px;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition-delay: 800ms;
+            transition-delay: 800ms;
+    opacity: .9;
+  }
+  .pc_ft_pie {
+    position: relative;
+  }
+  .pc_ft_pie_wrapper {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    width: 60px;
+    height: 60px;
+  }
+  .pc-swiper-text {
+    position: absolute;
+    top: 127px;
+    left: 50px;
+    color: #fff;
+    width: 300px;
+  }
+  .roll_circle {
+    display: block;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

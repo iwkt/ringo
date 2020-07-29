@@ -282,6 +282,31 @@ p {
   z-index: 100;
 }
 
+.hover_dark {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover_dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: rgba(54, 54, 54, 0.1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.hover_dark:hover::before {
+  -webkit-transform: none;
+          transform: none;
+}
+
 .icons {
   text-align: right;
   padding-bottom: 10px 0 10px;
@@ -560,11 +585,9 @@ p {
   position: absolute;
   top: 11%;
   right: 0;
-  bottom: 0;
   left: 0;
   width: 60px;
   height: 60px;
-  /* display: block; */
   margin: 0 auto;
   -webkit-animation: rollzAnime 1s , rollpAnime 3.5s linear infinite;
           animation: rollzAnime 1s , rollpAnime 3.5s linear infinite;
