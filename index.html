@@ -93,10 +93,7 @@
             <button class="pc_lang_btn col">Online Shop</button>
             <button class="pc_lang_btn col">JA</button>
           </div>
-          <!-- <div class="pc_lang_btns grid">
-            <button class="pc_lang_btn col md-hidden">Online Shop</button>
-            <button class="pc_lang_btn col md-hidden">JA</button>
-          </div> -->
+
           <!-- hamburger menu -->
           <div class="nav_area grid">
             <a id="navOpen" class="nav_open col-12">
@@ -242,6 +239,13 @@
             <!-- Swiper END -->
           </section>
           <section id="AboutRingo" class="about">
+            <button onclick="document.querySelector('.about_pc_img').classList.toggle('active');">Animation</button>
+            <div class="about_pc_wrapper md-hidden">
+              <div class="about_pc_bk"></div>
+              <div class="about_pc_clipbox">
+                <img class="about_pc_img" src="./assets/images/background_concept.jpg" alt="">
+              </div>
+            </div>
             <div class="about_wrapper">
               <div class="about_title sm-12">
                 <p class="section_title about">ABOUT RINGO</p>
@@ -310,8 +314,8 @@
               </div><!-- parent-->
               <!-- Swiper END -->
               <div class="pc_feature md-hidden">
-                <div class="pc_ft_pie_wrapper">
-                  <div class="pc_ft_pie">
+                <div class="pc_pd_pie_wrapper">
+                  <div class="pc_pd_pie">
                     <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
                     <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_pie.png" alt="play_btn"></a>
                     <div class="line_dot"></div>
@@ -323,8 +327,38 @@
                     </div>
                   </div>
                 </div><!--pie_wrapper-->
+           
+                <div class="pc_pd_castard_wrapper">
+                  <div class="pc_pd_pie">
+                    <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
+                    <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_castard.png" alt="play_btn"></a>
+                    <div class="line_dot"></div>
+                    <div class="pc-swiper-text">
+                      <span class="pc-left-text">
+                        <P class="product-atic-ttl">CUSTARDCREAM</P><br>
+                        <p class="tex_sz13">後入れでたっぷりはいった<br>カスタードクリーム</p>
+                      </span>
+                    </div>
+                  </div>
+                </div><!--castard_wrapper-->
+
+                <div class="pc_pd_apple_wrapper">
+                  <div class="pc_pd_pie">
+                    <img class="roll_circle" src="./assets/images/roll.svg" alt="roll">
+                    <a class="pie_icon"><img class="pie_btn" src="./assets/images/icon_apple.png" alt="play_btn"></a>
+                    <div class="line_dot"></div>
+                    <div class="pc-swiper-text">
+                      <span class="pc-left-text">
+                        <P class="product-atic-ttl">apple</P><br>
+                        <p class="tex_sz13">ごろごろ食感と香りを楽しめる<br>大きめのキューブカット</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!--apple_wrapper-->
               </div>
             </div><!--produxt_kv-->
+
             <div class="larn_more">
               <!-- <img class="circle_arrow" src="./assets/images/circle_arrow.svg" alt=""> -->
               <svg  class="arr" xmlns="http://www.w3.org/2000/svg" width="30.677" height="25" viewBox="0 0 30.677 25">
@@ -343,16 +377,38 @@
 
           <section id="ShopSlide">
             <div class="shop_container">
-              <div class="about_title sm-12">
-                <p class="section_title shop">SHOP</p>
+              <div class="about_mobile">
+                <div class="about_title sm-12">
+                  <p class="section_title shop">SHOP</p>
+                </div>
+                <div class="shop_pict cover_slide sm-12">
+                  <!-- <div class="cover_slide sm-12"> -->
+                    <img class="img-zoom" src="./assets/images/background_next_shop.jpg" alt="shop">
+                  <!-- </div> -->
+                  <img class="shop_toyosu" src="./assets/images/shop-toyosu3-750x422.jpg" alt="">
+                </div><!--shop_pict-->
               </div>
-              <div class="shop_pict cover_slide sm-12">
-                <!-- <div class="cover_slide sm-12"> -->
-                  <img class="img-zoom" src="./assets/images/background_next_shop.jpg" alt="shop">
-                <!-- </div> -->
-                <img class="shop_toyosu" src="./assets/images/shop-toyosu3-750x422.jpg" alt="">
-              </div><!--shop_pict-->
+
+              <div class="pc_shop md-hidden">
+                <div class="pc_shop_wrapper">
+                  <div class="pc_shop_bk"></div>
+                  <div class="pc_shop_clipbox">
+                    <!-- <div class="shop_pict cover_slide sm-12"> -->
+                    <!-- <div class="cover_slide sm-12"> -->
+                      <img class="img-zoom" src="./assets/images/background_next_shop.jpg" alt="shop">
+                      <!-- </div> -->
+                      <!-- </div> -->
+                      <!--shop-->
+                  </div>
+                </div>
+              </div>
+
               <div class="shop_wrapper ">
+                <div class="shop_toyosu_wrapper md-hidden">
+                  <div class="pc_toyosu_clipbox">
+                    <img class="pc_shop_toyosu" src="./assets/images/shop-toyosu3-750x422.jpg" alt="">
+                  </div>
+                </div>
                 <div class="shop_inner">
                   <h2>ららぽーと豊洲３店</h2>
                   <p>2020年6月1日（月）オープン <br> 
@@ -522,6 +578,8 @@
     <script src="./assets/js/humbger.js"></script>
     <script src="./assets/js/text_split.js"></script>
     <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/abou_imgZoom.js"></script>
+    <script src="./assets/js/shop_imgZoom.js"></script>
     <script src="./assets/js/img-zoom.js"></script>
     <script src="./assets/swiper/swiper.js"></script>
     <script src="./assets/js/swiper_local.js"></script>

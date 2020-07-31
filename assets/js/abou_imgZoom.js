@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-  function showElementAnimation() {
-    let element = document.getElementsByClassName('cover_slide');
+  function showElementAnimation1() {
+    let element = document.getElementsByClassName('about_pc_img');
     if (!element) return; // 要素がなかったら処理をキャンセル
 
-    let showTiming = window.innerHeight > 768 ? 180 : 50; // 要素が出てくるタイミングはここで調整
+    let showTiming = window.innerHeight > 768 ? 260 : 50; // 要素が出てくるタイミングはここで調整
     let scrollY = window.pageYOffset; //スクロール量を取得
     let windowH = window.innerHeight; //ブラウザウィンドウのビューポート(viewport)の高さを取得
 
@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
       let elemClientRect = element[i].getBoundingClientRect();
       let elemY = scrollY + elemClientRect.top;
       if (scrollY + windowH - showTiming > elemY) {
-        element[i].classList.add('inview');
+        element[i].classList.add('active');
       } else if (scrollY + windowH < elemY) {
         // 上にスクロールして再度非表示にする場合はこちらを記述
-        element[i].classList.remove('inview');
+        element[i].classList.remove('active');
       }
     }
   }
-  showElementAnimation();
-  window.addEventListener('scroll', showElementAnimation);
+  showElementAnimation1();
+  window.addEventListener('scroll', showElementAnimation1);
 
 });

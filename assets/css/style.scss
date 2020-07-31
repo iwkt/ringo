@@ -37,6 +37,32 @@ $feature_padding: 20px;
     letter-spacing: 0.1rem;
     line-height: 2.2;
   }
+  &pc_ {
+    &bk {
+      background-color: rgb(231, 231, 231);
+      height: 640px;
+    }
+    &clipbox {
+      position: absolute;
+      top: 80px;
+      left: 100px;
+      height: 100%;
+      overflow: hidden;
+    }
+    &img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      transform: translateX(-100%);
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      &.active {
+        transform: none;
+      }
+    }
+    &wrapper {
+      position: relative;
+    }
+  }
   &wrapper {
     background-image: url(../images/background_red.png);
     background-color:rgba(211,3,4,.9);
@@ -594,6 +620,38 @@ position: absolute;
     color: white;
     letter-spacing: 1.3px;
   }
+}
+
+.pc_shop_ {
+  &clipbox {
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    height: 100%;
+    overflow: hidden;
+  }
+  &wrapper {
+    position: relative;
+    width: 100%;
+  }
+  &bk {
+    background-color: #e7e7e7;
+    height: 465px;
+  }
+}
+
+.shop_toyosu_wrapper {
+  position: relative;
+}
+
+.pc_toyosu_clipbox {
+  position: absolute;
+  top: 1px;
+  left: 200px;
+}
+
+.pc_shop_toyosu {
+  max-width: 350px;
 }
 
 .pie_ {

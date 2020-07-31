@@ -31,8 +31,26 @@
   #navOpen {
     display: none;
   }
+  .about_inner {
+    padding-top: 200px;
+    padding-left: 180px;
+    width: 73%;
+  }
+  .about_title {
+    display: none;
+  }
+  .about_mobile {
+    display: none;
+  }
+  .about_wrapper p {
+    font-size: 15px;
+  }
   .animate-title {
-    top: -20%;
+    top: 130px;
+    left: 175px;
+  }
+  .animate-title > span {
+    font-size: 30px;
   }
   .bottom_logo {
     width: 803px;
@@ -40,10 +58,27 @@
   .header_logo {
     display: none;
   }
+  .img-zoom {
+    height: 100%;
+    opacity: 1;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+  }
+  .img-zoom.active {
+    -webkit-transform: none;
+            transform: none;
+  }
   .line_dot {
     top: 132px;
     left: 25px;
     opacity: 1;
+  }
+  .mobile {
+    display: none;
   }
   .mobile_feature {
     display: none;
@@ -135,16 +170,12 @@
     position: relative;
     margin: 0;
   }
-  .roll {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 70px;
+  .shop_toyosu {
+    top: 0;
+    z-index: 10;
+  }
+  .roll_circle {
     /* display: block; */
-    margin: 0 auto;
-    text-align: center;
   }
   .pie_btn {
     position: absolute;
@@ -173,15 +204,41 @@
             transition-delay: 800ms;
     opacity: .9;
   }
-  .pc_ft_pie {
+  .pc_pd_pie {
     position: relative;
   }
-  .pc_ft_pie_wrapper {
+  .pc_pd_pie_wrapper {
     position: absolute;
     top: 15%;
     left: 17%;
     width: 60px;
     height: 60px;
+  }
+  .pc_pd_castard_wrapper {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 45%;
+    left: 30%;
+  }
+  .pc_pd_castard {
+    position: absolute;
+    top: 50px;
+    left: 20%;
+  }
+  .pc_pd_apple_wrapper {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 38%;
+    left: 72%;
+  }
+  .pc_pd_apple {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 45%;
+    left: 30%;
   }
   .pc-swiper-text {
     position: absolute;
